@@ -216,3 +216,23 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables
+.env
+
+# Jupyter files
+.ipynb_checkpoints/
+
+# macOS files
+.DS_Store

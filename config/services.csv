@@ -1,0 +1,6 @@
+service_name,code_type,service_code
+CT scan of head,HCPCS,70450
+CT scan of abdomen and pelvis,HCPCS,74176
+MRI of knee,HCPCS,73721
+Colonoscopy,HCPCS,45378
+Upper gastrointestinal endoscopy,HCPCS,43235
