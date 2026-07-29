@@ -17,25 +17,35 @@ def check_url(hospital_name: str, url: str) -> None:
         return
 
     try:
-        # stream=True prevents the entire large pricing file from downloading.
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/149.0.0.0 Safari/537.36"
+            ),
+            "Accept": "text/csv,application/json,application/zip,*/*",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Referer": "https://www.northside.com/patients-visitors/billing-and-insurance/price-transparency",
+            "Sec-Fetch-Site": "same-site",
+            "Sec-Fetch-Mode": "no-cors",
+            "Sec-Fetch-Dest": "empty",
+        }
         with requests.get(
             str(url).strip(),
+            headers=headers,
             stream=True,
             timeout=30,
             allow_redirects=True,
         ) as response:
-            status = response.status_code
-            content_type = response.headers.get("Content-Type", "Unknown")
-            content_length = response.headers.get("Content-Length", "Unknown")
 
             if response.ok:
                 print(f"SUCCESS: {hospital_name}")
             else:
                 print(f"FAILED: {hospital_name}")
 
-            print(f"  Status code: {status}")
-            print(f"  Content type: {content_type}")
-            print(f"  File size in bytes: {content_length}")
+            print(f"  Status code: {response.status_code}")
+            print(f"  Content type: {response.headers.get('Content-Type')}")
+            print(f"  File size in bytes: {response.headers.get('Content-Length')}")
             print(f"  Final URL: {response.url}")
 
     except requests.RequestException as error:

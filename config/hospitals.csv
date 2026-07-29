@@ -1,7 +1,7 @@
 hospital_name,city,state,price_file_url,source_page_url
 Emory University Hospital,Atlanta,GA,https://www.emoryhealthcare.org/-/media/Project/EH/Emory/ui/pricing-transparency/csv/2026/580566256_1588640692_emory-university_standardcharges.csv,https://www.emoryhealthcare.org/patients-visitors/insurance-billing/price-transparency
-Grady Memorial Hospital,Atlanta,GA,,
-Northside Hospital Atlanta,Atlanta,GA,,
-Piedmont Atlanta Hospital,Atlanta,GA,,
-Wellstar Kennestone Hospital,Marietta,GA,,
-Children's Healthcare of Atlanta,Atlanta,GA,,
+Grady Memorial Hospital,Atlanta,GA,https://www.gradyhealth.org/files/263037695_GradyMemorialHospitalCorporation_standardcharges.csv,https://www.gradyhealth.org/contact/
+Northside Hospital Atlanta,Atlanta,GA,https://assets.northside.com/price-transparency/581954432-1457396079_northside-hospital-inc_standardcharges.json,https://www.northside.com/patients-visitors/billing-and-insurance/price-transparency
+Piedmont Atlanta Hospital,Atlanta,GA,https://www.piedmont.org/-/media/files/patients-and-visitors/price-estimates/price-estimates-2026/580566213_piedmont-atlanta-hospital_standardcharges.zip,https://www.piedmont.org/patients-and-visitors/price-estimates
+Wellstar Kennestone Hospital,Marietta,GA,https://www.wellstar.org/-/media/project/wellstar/org/documents/hospital-pricing-transparency-2026/58-2032904_wellstar-kennestone-hospital_standardcharges-(1).csv,https://www.wellstar.org/financial-policy-and-privacy-info/hospital-pricing-transparency
+Arthur M. Blank Hospital,Atlanta,GA,https://www.choa.org/-/media/Files/Childrens/billing/standard-charges/2026/58-0572412_childrens-healthcare-of-atl-at-arthur-m-blank_standardcharges.csv,https://www.choa.org/patients/bills-and-insurance
