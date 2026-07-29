@@ -236,3 +236,6 @@ data/processed/*
 
 # macOS files
 .DS_Store
+data/raw/*
+data/processed/*
+!data/processed/northside_sample_flat.csv
