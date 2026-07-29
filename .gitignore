@@ -241,3 +241,4 @@ data/processed/*
 !data/processed/northside_sample_flat.csv
 !data/processed/emory_sample_flat.csv
 !data/processed/grady_sample_flat.csv
+!data/processed/piedmont_sample_flat.csv
