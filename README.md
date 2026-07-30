@@ -54,9 +54,11 @@ deliberately searching for the same procedure everywhere.
 `src/sample_northside_by_code.py` (Northside's JSON) instead stream
 through each hospital's **entire** raw file and keep only rows matching
 a specific billing code + code type, capped at 200 matches per search.
-These scripts overwrite each hospital's `data/sample/*` file — sample
-files represent "the last procedure searched for," not a fixed random
-excerpt.
+None of the searches in this project hit that cap — every match count
+reported below reflects a hospital's complete published data for that
+code, not a truncated sample. These scripts overwrite each hospital's
+`data/sample/*` file — sample files represent "the last procedure
+searched for," not a fixed random excerpt.
 
 ### Database loading: `--append` mode
 
@@ -152,28 +154,36 @@ out-of-network/workers'-comp ceiling rates, not real negotiated prices.
 more resistant to this kind of extreme outlier without needing to
 manually identify and exclude every suspicious payer by name.
 
-### 5. Sample size varies enormously and affects reliability
+### 5. Emory and Wellstar's low prices are partly, but not fully, explained by payer mix
 
-| Hospital | Head CT (n) | Knee MRI (n) | Colonoscopy (n) | Cardiac Stress (n) |
+Emory and Wellstar's total sample sizes for these four procedures
+(12-38 rate observations) are an order of magnitude smaller than
+Northside's (134-3,168) — and their samples are dominated by
+Medicare Advantage payers (Devoted Health, Cigna Healthspring, Clover,
+Wellcare, BCBS Blue Value Secure). Since Medicare-linked rates are
+structurally lower than commercial rates industry-wide, this was
+tested directly by excluding Medicare-branded payers and recomputing
+medians (`sql/median_commercial_only.sql`):
+
+| Procedure | Emory: all payers | Emory: excl. Medicare | Wellstar: all payers | Wellstar: excl. Medicare |
 |---|---|---|---|---|
-| Grady | 48 | 48 | 56 | 516 |
-| Piedmont | 18 | 16 | 36 | 90 |
-| CHOA | 28 | 56 | 0 | 140 |
-| Northside | 134 | 402 | 448 | 3,168 |
-| Emory | 13 | 13 | 38 | 14 |
-| Wellstar | 12 | 12 | 26 | 18 |
+| Head CT | $129.13 (n=13) | $280.20 (n=7) | $177.60 (n=12) | $202.29 (n=8) |
+| Knee MRI | $270.72 (n=13) | $582.60 (n=7) | $407.33 (n=12) | $461.68 (n=8) |
+| Cardiac Stress | $223.07 (n=14) | $459.14 (n=2) | $386.00 (n=18) | $429.86 (n=10) |
 
-Emory and Wellstar's samples (12-38 rate observations per procedure)
-are an order of magnitude smaller than Northside's (134-3,168). **Their
-median prices are flagged as low-confidence**: both hospitals' small
-samples happened to draw disproportionately from Medicare Advantage
-payers (Devoted Health, BCBS Blue Value Secure, Cigna Healthspring,
-etc.), which are structurally lower-cost than commercial insurance
-industry-wide. Their low medians likely reflect **sample composition**,
-not necessarily lower true facility prices, and would need a larger
-sample (via MAX_MATCHES increase in sample_by_code.py) to confirm.
+**The result is genuinely mixed, not a clean fix.** Removing
+Medicare-branded payers raised both hospitals' medians meaningfully
+(confirming Medicare-payer skew was a real, contributing factor), but
+the gap to other hospitals did not close — and the remaining
+commercial-only samples are themselves too small (n=2 to n=10) to
+support a confident median. **The honest conclusion: there is not
+enough commercial-payer data published by Emory and Wellstar for these
+specific procedures to determine their true typical price with
+confidence, in either direction.** This is presented as a data
+completeness limitation of these two hospitals' published files, not
+as evidence that their prices are or are not genuinely lower.
 
-## Median Price Comparison (facility-only, outlier-resistant)
+## Median Price Comparison (facility-only, outlier-resistant, all payers)
 
 Query: `sql/median_by_procedure.sql`
 
@@ -183,10 +193,12 @@ Query: `sql/median_by_procedure.sql`
 | Piedmont | $654.50 | $1,754.00 | $3,455.76 | $2,484.90 |
 | CHOA | $1,721.85 | $3,664.81 | n/a | $2,053.61 |
 | Northside | $1,134.50 | $1,678.00 | $667.96 | $888.77 |
-| Emory (low confidence) | $129.13 | $270.72 | $3,051.00 | $223.07 |
-| Wellstar (low confidence) | $177.60 | $407.33 | $1,995.27 | $386.00 |
+| Emory (see Finding 5) | $129.13 | $270.72 | $3,051.00 | $223.07 |
+| Wellstar (see Finding 5) | $177.60 | $407.33 | $1,995.27 | $386.00 |
 
-"Low confidence" = small, payer-skewed sample (see Finding 5).
+Emory and Wellstar figures are directionally informative but should not
+be treated as confidently comparable to the other four hospitals — see
+Finding 5 for the tested explanation and its limits.
 
 ## How to Reproduce
 
@@ -204,10 +216,11 @@ Query: `sql/median_by_procedure.sql`
 - Build the Tableau/Power BI dashboard comparing prices across hospitals
   and procedures, incorporating the median-vs-average and sample-size
   caveats documented above.
-- Consider increasing MAX_MATCHES for Emory/Wellstar specifically to
-  get a larger, more representative payer mix before finalizing
-  comparisons.
-- Integrate CMS hospital quality measures via the Provider Data Catalog
-  API for the price-vs-quality analysis.
+- Build the CMS quality-measures integration and join to this pricing
+  data for the price-vs-quality analysis.
 - Investigate CHOA's colonoscopy gap further (confirmed absent under
   both 45378 and 45380 — likely a genuine pediatric-population effect).
+- Emory/Wellstar's commercial-payer data gap (Finding 5) is a genuine,
+  documented limitation rather than something to "fix" further within
+  this project's data source — worth stating plainly in any final
+  write-up rather than presenting their medians at face value.
