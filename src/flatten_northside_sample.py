@@ -2,25 +2,18 @@
 Flatten the small Northside sample JSON into the unified column schema
 shared across all hospitals in this project.
 
-UPDATE: same price resolution logic as the other flatten_*.py scripts.
-Northside's JSON structure defines standard_charge_dollar directly on
-each payer entry (and, per the CMS JSON schema, could alternatively use
-standard_charge_percentage instead) -- but does not include a
-median_amount equivalent the way the CSV-based hospitals do. So for
-Northside specifically, expect price_type to only ever resolve as
-"negotiated_dollar", "percent_of_billed", or "unavailable" -- never
-"median_estimate". That's a real structural difference between the JSON
-and CSV templates, worth noting in the audit.
+UPDATE: added billing_class and modifiers. Per the CMS JSON schema,
+these are fields on each object inside standard_charges (same level as
+setting/gross_charge), not on the outer service object. Extracted here
+the same way. NOTE: our original 25-record random sample was mostly
+drugs, which typically don't have a professional/technical split, so
+billing_class/modifiers may show up empty there -- but the targeted
+CPT 70450 sample (procedures) should populate these correctly, since
+that's exactly the pattern that prompted this whole schema change.
 
-BUGFIX: this script previously pulled hospital_name directly from the
-JSON file's own "hospital_name" field, which is Northside's internal
-corporate name ("Northside Hospital, Inc."), NOT the canonical name used
-everywhere else in this project ("Northside Hospital Atlanta" --
-matching config/hospitals.csv). That mismatch caused every Northside row
-to silently fail to match any hospital in load_database.py. Now hardcoded
-to the canonical name, same convention as every other flatten_*.py
-script -- source files' self-reported names should never be trusted as
-the join key.
+Also retains the earlier bugfix: HOSPITAL_NAME is hardcoded to the
+canonical project name, not read from the JSON file's own
+self-reported "hospital_name" field.
 """
 
 import json
@@ -31,10 +24,6 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 INPUT_FILE = PROJECT_ROOT / "data" / "sample" / "northside_sample.json"
 OUTPUT_FILE = PROJECT_ROOT / "data" / "processed" / "northside_sample_flat.csv"
 
-# Canonical name, matching config/hospitals.csv -- NOT the same as the
-# "hospital_name" field inside Northside's own JSON file, which is its
-# internal corporate name ("Northside Hospital, Inc.") rather than the
-# name used consistently across this project.
 HOSPITAL_NAME = "Northside Hospital Atlanta"
 
 OUTPUT_COLUMNS = [
@@ -48,6 +37,8 @@ OUTPUT_COLUMNS = [
     "drg_code",
     "drug_unit",
     "drug_unit_type",
+    "billing_class",
+    "modifiers",
     "setting",
     "gross_charge",
     "discounted_cash",
@@ -81,6 +72,16 @@ def extract_codes(code_information: list) -> dict:
         if column_name:
             codes[column_name] = code_entry.get("code", "")
     return codes
+
+
+def extract_modifiers(charge: dict) -> str:
+    """Per CMS JSON schema, modifiers is an array of strings on the
+    standard_charges object. Join into a single comma-separated string
+    to match the flat CSV convention used by the other hospitals."""
+    modifiers = charge.get("modifiers", [])
+    if isinstance(modifiers, list):
+        return ",".join(str(m) for m in modifiers)
+    return str(modifiers) if modifiers else ""
 
 
 def resolve_price(gross_charge, negotiated_dollar,
@@ -121,6 +122,8 @@ def flatten_service(service: dict, hospital_name: str) -> list:
         discounted_cash = charge.get("discounted_cash", "")
         minimum_charge = charge.get("minimum", "")
         maximum_charge = charge.get("maximum", "")
+        billing_class = charge.get("billing_class", "")
+        modifiers = extract_modifiers(charge)
 
         payers = charge.get("payers_information", [])
 
@@ -131,6 +134,8 @@ def flatten_service(service: dict, hospital_name: str) -> list:
                 **codes,
                 "drug_unit": drug_unit,
                 "drug_unit_type": drug_unit_type,
+                "billing_class": billing_class,
+                "modifiers": modifiers,
                 "setting": setting,
                 "gross_charge": gross_charge,
                 "discounted_cash": discounted_cash,
@@ -150,8 +155,7 @@ def flatten_service(service: dict, hospital_name: str) -> list:
         for payer in payers:
             negotiated_dollar = payer.get("standard_charge_dollar", "")
             negotiated_percentage = payer.get("standard_charge_percentage", "")
-            # Northside's JSON schema has no median_amount equivalent.
-            median_amount = ""
+            median_amount = ""  # Northside's JSON schema has no equivalent field.
 
             price_type, resolved_price = resolve_price(
                 gross_charge, negotiated_dollar, negotiated_percentage, median_amount
@@ -163,6 +167,8 @@ def flatten_service(service: dict, hospital_name: str) -> list:
                 **codes,
                 "drug_unit": drug_unit,
                 "drug_unit_type": drug_unit_type,
+                "billing_class": billing_class,
+                "modifiers": modifiers,
                 "setting": setting,
                 "gross_charge": gross_charge,
                 "discounted_cash": discounted_cash,
@@ -188,8 +194,6 @@ def main() -> None:
     with open(INPUT_FILE, "r") as f:
         data = json.load(f, parse_float=Decimal)
 
-    # Use the canonical project-wide name, NOT data.get("hospital_name"),
-    # which would pull Northside's own internal corporate name instead.
     hospital_name = HOSPITAL_NAME
     services = data.get("standard_charge_information", [])
 

@@ -2,22 +2,16 @@
 Load all six hospitals' flattened sample data into the SQLite database
 defined in sql/schema.sql.
 
-This script is SAFE TO RE-RUN: it clears out existing hospitals/
-services/prices data before reloading, so you can tweak a flatten_*.py
-script, regenerate a sample, and rerun this without manually cleaning up
-old rows first.
+UPDATE: billing_class and modifiers are now part of SERVICE_KEY_COLUMNS
+and the services table. Discovery: the same CPT code + same description
+can cover genuinely different billing entities (facility fee vs.
+professional-interpretation-only vs. technical-component-only), which
+looked like unexplained duplicate prices until these fields were added.
+Two rows now count as the SAME service only if they also match on
+billing_class and modifiers.
 
-What it does, in order:
-1. Wipes existing data from prices, services, and hospitals tables
-   (children first, to respect foreign key constraints).
-2. Reads config/hospitals.csv and inserts one row per hospital into the
-   hospitals table, tagging each with the source_format we determined
-   by hand while building each hospital's sample/flatten scripts.
-3. Reads each data/processed/*_flat.csv file. For each row:
-   - Finds or creates the matching service (deduplicated by hospital +
-     description + all code fields, since the flattened CSVs repeat
-     service-level info on every price row).
-   - Inserts one row into prices, referencing that service_id.
+Safe to re-run: clears out existing hospitals/services/prices data
+before reloading.
 """
 
 import csv
@@ -30,8 +24,6 @@ PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 SCHEMA_FILE = PROJECT_ROOT / "sql" / "schema.sql"
 DB_FILE = PROJECT_ROOT / "data" / "hospital_prices.db"
 
-# Determined by hand while sourcing/sampling each hospital -- not
-# something derivable automatically from hospitals.csv.
 SOURCE_FORMATS = {
     "Northside Hospital Atlanta": "json",
     "Emory University Hospital": "csv_flat",
@@ -41,7 +33,6 @@ SOURCE_FORMATS = {
     "Arthur M. Blank Hospital": "csv_flat",
 }
 
-# Each hospital's flattened sample file.
 FLAT_FILES = [
     "northside_sample_flat.csv",
     "emory_sample_flat.csv",
@@ -51,17 +42,17 @@ FLAT_FILES = [
     "choa_sample_flat.csv",
 ]
 
-# Columns that make up a service's identity. Two rows with the same
-# hospital + all of these values are treated as the SAME service, even
-# though the flattened CSVs repeat this info on every price row.
+# UPDATE: billing_class and modifiers added -- two rows with identical
+# codes/description but different billing_class or modifiers are
+# genuinely different services (e.g. facility vs. professional fee).
 SERVICE_KEY_COLUMNS = [
     "description", "ndc_code", "revenue_code", "cdm_code",
     "hcpcs_code", "cpt_code", "drg_code", "drug_unit", "drug_unit_type",
+    "billing_class", "modifiers",
 ]
 
 
 def to_float(value: str):
-    """Convert a CSV string to a float, or None if blank/invalid."""
     if value is None or value == "":
         return None
     try:
@@ -71,16 +62,12 @@ def to_float(value: str):
 
 
 def reset_database(conn: sqlite3.Connection) -> None:
-    """Ensure the schema exists, then clear existing rows so this script
-    can be safely re-run without manually cleaning up first."""
     with open(SCHEMA_FILE, "r") as f:
         conn.executescript(f.read())
 
-    # Delete children before parents to respect foreign key constraints.
     conn.execute("DELETE FROM prices")
     conn.execute("DELETE FROM services")
     conn.execute("DELETE FROM hospitals")
-    # Reset autoincrement counters so IDs start fresh each run.
     conn.execute(
         "DELETE FROM sqlite_sequence WHERE name IN "
         "('prices', 'services', 'hospitals')"
@@ -89,10 +76,6 @@ def reset_database(conn: sqlite3.Connection) -> None:
 
 
 def load_hospitals(conn: sqlite3.Connection) -> dict:
-    """
-    Insert one row per hospital from config/hospitals.csv. Returns a dict
-    mapping hospital_name -> hospital_id, used when loading services.
-    """
     hospital_ids = {}
 
     with open(HOSPITALS_FILE, "r", newline="") as f:
@@ -121,11 +104,6 @@ def load_hospitals(conn: sqlite3.Connection) -> dict:
 
 def get_or_create_service(conn: sqlite3.Connection, service_cache: dict,
                             hospital_id: int, row: dict) -> int:
-    """
-    Return the service_id for this row's service, inserting a new
-    services row only if this exact (hospital, description, codes)
-    combination hasn't been seen yet in this run.
-    """
     key = (hospital_id,) + tuple(row.get(col, "") for col in SERVICE_KEY_COLUMNS)
 
     if key in service_cache:
@@ -135,8 +113,9 @@ def get_or_create_service(conn: sqlite3.Connection, service_cache: dict,
         """
         INSERT INTO services
             (hospital_id, description, ndc_code, revenue_code, cdm_code,
-             hcpcs_code, cpt_code, drg_code, drug_unit, drug_unit_type)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+             hcpcs_code, cpt_code, drg_code, drug_unit, drug_unit_type,
+             billing_class, modifiers)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             hospital_id,
@@ -149,6 +128,8 @@ def get_or_create_service(conn: sqlite3.Connection, service_cache: dict,
             row.get("drg_code", ""),
             row.get("drug_unit", ""),
             row.get("drug_unit_type", ""),
+            row.get("billing_class", ""),
+            row.get("modifiers", ""),
         ),
     )
     service_id = cursor.lastrowid
@@ -158,7 +139,6 @@ def get_or_create_service(conn: sqlite3.Connection, service_cache: dict,
 
 def load_prices_file(conn: sqlite3.Connection, filepath: Path,
                        hospital_ids: dict, service_cache: dict) -> int:
-    """Load one hospital's flattened CSV into services + prices."""
     if not filepath.exists():
         print(f"  Skipping {filepath.name} -- file not found.")
         return 0

@@ -2,10 +2,15 @@
 Flatten the small Grady sample CSV into the unified column schema shared
 across all hospitals in this project.
 
-UPDATE: same price resolution logic as flatten_emory_sample.py, adapted
-for Grady's wide/pivoted structure -- median_amount here is read from a
-per-payer-plan column (median_amount|{payer}|{plan}) rather than a single
-flat column, since Grady stores it sideways just like the rate fields.
+UPDATE: added billing_class and modifiers. This is the exact discovery
+that prompted this schema change project-wide: Grady's CPT 70450 data
+showed multiple different prices for what looked like "the same"
+service (same description, same CPT code) until billing_class and
+modifiers were checked -- they revealed facility fee vs.
+professional-interpretation-only (modifier 26) vs.
+professional-technical-component-only (modifier TC) as genuinely
+different billing entities. These are per-row fields (shared across all
+of a row's payer+plan groups), same as gross_charge/setting.
 """
 
 import csv
@@ -29,6 +34,8 @@ OUTPUT_COLUMNS = [
     "drg_code",
     "drug_unit",
     "drug_unit_type",
+    "billing_class",
+    "modifiers",
     "setting",
     "gross_charge",
     "discounted_cash",
@@ -112,6 +119,8 @@ def flatten_service_row(row: dict, payer_plan_pairs: list) -> list:
         **codes,
         "drug_unit": row.get("drug_unit_of_measurement", ""),
         "drug_unit_type": row.get("drug_type_of_measurement", ""),
+        "billing_class": row.get("billing_class", ""),
+        "modifiers": row.get("modifiers", ""),
         "setting": row.get("setting", ""),
         "gross_charge": gross_charge,
         "discounted_cash": row.get("standard_charge|discounted_cash", ""),
@@ -134,8 +143,6 @@ def flatten_service_row(row: dict, payer_plan_pairs: list) -> list:
         median_amount = row.get(f"median_amount|{payer}|{plan}", "")
         methodology = row.get(f"standard_charge|{payer}|{plan}|methodology", "")
 
-        # Skip payer+plan pairs with no rate information of any kind
-        # (dollar, percentage, algorithm, or median) for this service.
         if not (negotiated_dollar or negotiated_percentage
                 or negotiated_algorithm or median_amount):
             continue

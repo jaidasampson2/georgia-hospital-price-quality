@@ -2,12 +2,9 @@
 Flatten the small Piedmont sample CSV into the unified column schema
 shared across all hospitals in this project.
 
-UPDATE: same price resolution logic added as in flatten_emory_sample.py.
-See that file's docstring for the full explanation. Piedmont's sample
-mostly has clean negotiated_dollar values already, so most rows here
-should resolve as price_type = "negotiated_dollar" without needing the
-percentage or median fallback -- a useful contrast against Emory/Grady/
-Wellstar once you compare price_type breakdowns across hospitals.
+UPDATE: added billing_class and modifiers -- same reasoning as
+flatten_emory_sample.py. See that file's docstring for the full
+explanation.
 """
 
 import csv
@@ -30,6 +27,8 @@ OUTPUT_COLUMNS = [
     "drg_code",
     "drug_unit",
     "drug_unit_type",
+    "billing_class",
+    "modifiers",
     "setting",
     "gross_charge",
     "discounted_cash",
@@ -108,6 +107,8 @@ def flatten_row(row: dict) -> dict:
         **codes,
         "drug_unit": row.get("drug_unit_of_measurement", ""),
         "drug_unit_type": row.get("drug_type_of_measurement", ""),
+        "billing_class": row.get("billing_class", ""),
+        "modifiers": row.get("modifiers", ""),
         "setting": row.get("setting", ""),
         "gross_charge": gross_charge,
         "discounted_cash": row.get("standard_charge|discounted_cash", ""),

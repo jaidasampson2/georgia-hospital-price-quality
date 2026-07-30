@@ -2,13 +2,8 @@
 Flatten the small Wellstar Kennestone sample CSV into the unified column
 schema shared across all hospitals in this project.
 
-UPDATE: same price resolution logic as flatten_emory_sample.py. This is
-the hospital where the fallback logic matters most -- our second sample
-showed heavy use of algorithm-based fee schedules, but with
-median_amount / percentile fields populated even when negotiated_dollar
-was blank. Expect a meaningful share of rows to resolve as
-price_type = "median_estimate" here, in contrast to Piedmont's mostly
-"negotiated_dollar" rows.
+UPDATE: added billing_class and modifiers -- same reasoning as
+flatten_emory_sample.py.
 """
 
 import csv
@@ -31,6 +26,8 @@ OUTPUT_COLUMNS = [
     "drg_code",
     "drug_unit",
     "drug_unit_type",
+    "billing_class",
+    "modifiers",
     "setting",
     "gross_charge",
     "discounted_cash",
@@ -109,6 +106,8 @@ def flatten_row(row: dict) -> dict:
         **codes,
         "drug_unit": row.get("drug_unit_of_measurement", ""),
         "drug_unit_type": row.get("drug_type_of_measurement", ""),
+        "billing_class": row.get("billing_class", ""),
+        "modifiers": row.get("modifiers", ""),
         "setting": row.get("setting", ""),
         "gross_charge": gross_charge,
         "discounted_cash": row.get("standard_charge|discounted_cash", ""),

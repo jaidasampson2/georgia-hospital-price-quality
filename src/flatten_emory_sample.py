@@ -2,16 +2,12 @@
 Flatten the small Emory sample CSV into the unified column schema shared
 across all hospitals in this project.
 
-UPDATE: added a price resolution step. Across Emory, Grady, and Wellstar,
-we found that a clean "negotiated_dollar" amount is often missing, while
-a negotiated_percentage or median_amount is often present instead. These
-are NOT interchangeable numbers -- silently treating them as the same
-"price" would be a real analytical error. Instead, we now record:
-  - resolved_price: our best usable estimate, following a clear priority
-  - price_type: a label saying exactly what KIND of number resolved_price
-    is, so nothing is presented as more precise than it really is
-This keeps negotiated_price (the original, exact-only field) untouched,
-so no information is lost or blended without being labeled.
+UPDATE: added billing_class and modifiers. Discovery from investigating
+Grady's data: the same CPT code + description can cover genuinely
+different billing entities (facility fee vs. professional fee with
+modifier 26 = interpretation-only, or TC = technical-component-only).
+These are now extracted and treated as part of a service's identity in
+load_database.py, not just descriptive metadata.
 """
 
 import csv
@@ -23,9 +19,6 @@ OUTPUT_FILE = PROJECT_ROOT / "data" / "processed" / "emory_sample_flat.csv"
 
 HOSPITAL_NAME = "Emory University Hospital"
 
-# Same column order used across all flatten_*.py scripts in this project,
-# now with negotiated_percentage, median_amount, price_type, and
-# resolved_price added.
 OUTPUT_COLUMNS = [
     "hospital_name",
     "description",
@@ -37,6 +30,8 @@ OUTPUT_COLUMNS = [
     "drg_code",
     "drug_unit",
     "drug_unit_type",
+    "billing_class",
+    "modifiers",
     "setting",
     "gross_charge",
     "discounted_cash",
@@ -78,11 +73,6 @@ def extract_codes(row: dict) -> dict:
 
 def resolve_price(gross_charge: str, negotiated_dollar: str,
                    negotiated_percentage: str, median_amount: str) -> tuple:
-    """
-    Decide the best usable price estimate and label what kind of number
-    it is. Priority: exact dollar amount > percentage-of-billed estimate
-    > median estimate > unavailable.
-    """
     if negotiated_dollar:
         return "negotiated_dollar", negotiated_dollar
 
@@ -93,9 +83,6 @@ def resolve_price(gross_charge: str, negotiated_dollar: str,
             estimated = round(gross * pct / 100, 2)
             return "percent_of_billed", str(estimated)
         except ValueError:
-            # gross_charge or negotiated_percentage wasn't a clean
-            # number -- fall through to the next option instead of
-            # crashing on messy real-world data.
             pass
 
     if median_amount:
@@ -122,6 +109,8 @@ def flatten_row(row: dict) -> dict:
         **codes,
         "drug_unit": row.get("drug_unit_of_measurement", ""),
         "drug_unit_type": row.get("drug_type_of_measurement", ""),
+        "billing_class": row.get("billing_class", ""),
+        "modifiers": row.get("modifiers", ""),
         "setting": row.get("setting", ""),
         "gross_charge": gross_charge,
         "discounted_cash": row.get("standard_charge|discounted_cash", ""),
