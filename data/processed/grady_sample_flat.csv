@@ -1,122 +1,122 @@
-hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,negotiated_percentage,median_amount,price_type,resolved_price,methodology
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,inpatient,4026,4026,2415.6,3220.8,Anthem BCBS,HPN,3220.8,80,,negotiated_dollar,3220.8,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,inpatient,4026,4026,2415.6,3220.8,Kaiser,Commercial,3051.71,75.8,,negotiated_dollar,3051.71,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,inpatient,4026,4026,2415.6,3220.8,Multiplan,Commercial,3100.02,77,,negotiated_dollar,3100.02,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,inpatient,4026,4026,2415.6,3220.8,USP Naphcare,Commercial,2415.6,60,,negotiated_dollar,2415.6,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Aetna,Commercial,1791.57,44.5,,negotiated_dollar,1791.57,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Aetna,Medicare,1409.1,35,,negotiated_dollar,1409.1,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Ambetter,Marketplace,595.85,14.8,,negotiated_dollar,595.85,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Amerigroup,Medicaid,654.63,16.26,,negotiated_dollar,654.63,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Anthem BCBS,HMO/POS,2948.64,73.24,,negotiated_dollar,2948.64,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Anthem BCBS,HPN,3220.8,80,,negotiated_dollar,3220.8,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Anthem BCBS,PPO,3061.77,76.05,,negotiated_dollar,3061.77,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Anthem BCBS,Pathways/Marketplace,2948.64,73.24,,negotiated_dollar,2948.64,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Caresource,Commercial,600.68,14.92,,negotiated_dollar,600.68,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Cigna,Commercial,2381.38,59.15,,negotiated_dollar,2381.38,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Cigna,IFP,2359.24,58.6,,negotiated_dollar,2359.24,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Cigna,Local Plus,1751.31,43.5,,negotiated_dollar,1751.31,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Kaiser,Commercial,3051.71,75.8,,negotiated_dollar,3051.71,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Multiplan,Commercial,3100.02,77,,negotiated_dollar,3100.02,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Oscar Health,Commercial/Marketplace,2616.9,65,,negotiated_dollar,2616.9,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,Peach State,Medicaid,600.68,14.92,,negotiated_dollar,600.68,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,UHC,Commercial,2898.72,72,,negotiated_dollar,2898.72,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,UHC,Exchange/Marketplace,2335.08,58,,negotiated_dollar,2335.08,percent of total billed charges
-Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,outpatient,4026,4026,595.85,3220.8,USP Naphcare,Commercial,2415.6,60,,negotiated_dollar,2415.6,percent of total billed charges
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,528.15,528.15,UHC,Exchange/Marketplace,528.15,,,negotiated_dollar,528.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,528.15,528.15,UHC,Surest Health,528.15,,,negotiated_dollar,528.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Aetna,Commercial,1475,,,negotiated_dollar,1475,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Aetna,Medicare,105.81,,,negotiated_dollar,105.81,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Ambetter,Marketplace,105.81,,,negotiated_dollar,105.81,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Anthem BCBS,HMO/POS,785.72,,,negotiated_dollar,785.72,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Anthem BCBS,Medicare,105.81,,,negotiated_dollar,105.81,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Anthem BCBS,PPO,785.72,,,negotiated_dollar,785.72,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Anthem BCBS,Pathways/Marketplace,785.72,,,negotiated_dollar,785.72,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Caresource,Marketplace,169.29,,,negotiated_dollar,169.29,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Cigna,Commercial,,59.15,,unavailable,,percent of total billed charges
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Cigna,IFP,148.02,,,negotiated_dollar,148.02,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Cigna,Medicare,105.81,,,negotiated_dollar,105.81,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Clear Spring Health,Medicare,111.1,,,negotiated_dollar,111.1,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Clover,Medicare,111.1,,,negotiated_dollar,111.1,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Humana,Medicare,105.81,,,negotiated_dollar,105.81,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Kaiser,Medicare,105.81,,,negotiated_dollar,105.81,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Medicare,Medicare,105.81,,,negotiated_dollar,105.81,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,Oscar Health,Commercial/Marketplace,175.47,,,negotiated_dollar,175.47,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,UHC,Medicare,105.81,,,negotiated_dollar,105.81,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,USP Naphcare,Commercial,195.74,,,negotiated_dollar,195.74,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,VACCN,Commercial,105.81,,,negotiated_dollar,105.81,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,105.81,1475,WellCare,Medicare,105.81,,,negotiated_dollar,105.81,case rate
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,528.15,528.15,UHC,Charter,528.15,,,negotiated_dollar,528.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,528.15,528.15,UHC,Commercial,528.15,,,negotiated_dollar,528.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,528.15,528.15,UHC,Core,528.15,,,negotiated_dollar,528.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Aetna,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Ambetter,Marketplace,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Amerigroup,Medicaid,37.64,,,negotiated_dollar,37.64,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Anthem BCBS,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Caresource,Commercial,37.64,,,negotiated_dollar,37.64,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Caresource,Marketplace,62.32,,,negotiated_dollar,62.32,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Cigna,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Clear Spring Health,Medicare,40.9,,,negotiated_dollar,40.9,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Clover,Medicare,40.9,,,negotiated_dollar,40.9,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Humana,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Kaiser,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Medicare,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Oscar Health,Commercial/Marketplace,54.74,,,negotiated_dollar,54.74,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Peach State,Medicaid,37.64,,,negotiated_dollar,37.64,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,UHC,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,USP Naphcare,Commercial,42.85,,,negotiated_dollar,42.85,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,VACCN,Commercial,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,WellCare,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Aetna,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Ambetter,Marketplace,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Amerigroup,Medicaid,37.64,,,negotiated_dollar,37.64,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Anthem BCBS,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Caresource,Commercial,37.64,,,negotiated_dollar,37.64,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Caresource,Marketplace,62.32,,,negotiated_dollar,62.32,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Cigna,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Clear Spring Health,Medicare,40.9,,,negotiated_dollar,40.9,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Clover,Medicare,40.9,,,negotiated_dollar,40.9,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Humana,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Kaiser,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Medicare,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Oscar Health,Commercial/Marketplace,54.74,,,negotiated_dollar,54.74,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,Peach State,Medicaid,37.64,,,negotiated_dollar,37.64,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,UHC,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,USP Naphcare,Commercial,42.85,,,negotiated_dollar,42.85,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,VACCN,Commercial,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,37.64,62.32,WellCare,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Aetna,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Ambetter,Marketplace,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Amerigroup,Medicaid,160.62,,,negotiated_dollar,160.62,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Anthem BCBS,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Caresource,Commercial,160.62,,,negotiated_dollar,160.62,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Caresource,Marketplace,105.84,,,negotiated_dollar,105.84,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Cigna,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Clear Spring Health,Medicare,69.46,,,negotiated_dollar,69.46,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Clover,Medicare,69.46,,,negotiated_dollar,69.46,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Humana,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Kaiser,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Medicare,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Oscar Health,Commercial/Marketplace,94.67,,,negotiated_dollar,94.67,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Peach State,Medicaid,160.62,,,negotiated_dollar,160.62,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,UHC,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,USP Naphcare,Commercial,72.77,,,negotiated_dollar,72.77,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,VACCN,Commercial,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,WellCare,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Aetna,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Ambetter,Marketplace,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Amerigroup,Medicaid,160.62,,,negotiated_dollar,160.62,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Anthem BCBS,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Caresource,Commercial,160.62,,,negotiated_dollar,160.62,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Caresource,Marketplace,105.84,,,negotiated_dollar,105.84,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Cigna,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Clear Spring Health,Medicare,69.46,,,negotiated_dollar,69.46,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Clover,Medicare,69.46,,,negotiated_dollar,69.46,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Humana,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Kaiser,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Medicare,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Oscar Health,Commercial/Marketplace,94.67,,,negotiated_dollar,94.67,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,Peach State,Medicaid,160.62,,,negotiated_dollar,160.62,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,UHC,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,USP Naphcare,Commercial,72.77,,,negotiated_dollar,72.77,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,VACCN,Commercial,66.15,,,negotiated_dollar,66.15,fee schedule
-Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,outpatient,,,66.15,160.62,WellCare,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,billing_class,modifiers,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,negotiated_percentage,median_amount,price_type,resolved_price,methodology
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,inpatient,4026,4026,2415.6,3220.8,Anthem BCBS,HPN,3220.8,80,,negotiated_dollar,3220.8,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,inpatient,4026,4026,2415.6,3220.8,Kaiser,Commercial,3051.71,75.8,,negotiated_dollar,3051.71,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,inpatient,4026,4026,2415.6,3220.8,Multiplan,Commercial,3100.02,77,,negotiated_dollar,3100.02,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,inpatient,4026,4026,2415.6,3220.8,USP Naphcare,Commercial,2415.6,60,,negotiated_dollar,2415.6,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Aetna,Commercial,1791.57,44.5,,negotiated_dollar,1791.57,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Aetna,Medicare,1409.1,35,,negotiated_dollar,1409.1,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Ambetter,Marketplace,595.85,14.8,,negotiated_dollar,595.85,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Amerigroup,Medicaid,654.63,16.26,,negotiated_dollar,654.63,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Anthem BCBS,HMO/POS,2948.64,73.24,,negotiated_dollar,2948.64,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Anthem BCBS,HPN,3220.8,80,,negotiated_dollar,3220.8,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Anthem BCBS,PPO,3061.77,76.05,,negotiated_dollar,3061.77,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Anthem BCBS,Pathways/Marketplace,2948.64,73.24,,negotiated_dollar,2948.64,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Caresource,Commercial,600.68,14.92,,negotiated_dollar,600.68,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Cigna,Commercial,2381.38,59.15,,negotiated_dollar,2381.38,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Cigna,IFP,2359.24,58.6,,negotiated_dollar,2359.24,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Cigna,Local Plus,1751.31,43.5,,negotiated_dollar,1751.31,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Kaiser,Commercial,3051.71,75.8,,negotiated_dollar,3051.71,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Multiplan,Commercial,3100.02,77,,negotiated_dollar,3100.02,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Oscar Health,Commercial/Marketplace,2616.9,65,,negotiated_dollar,2616.9,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,Peach State,Medicaid,600.68,14.92,,negotiated_dollar,600.68,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,UHC,Commercial,2898.72,72,,negotiated_dollar,2898.72,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,UHC,Exchange/Marketplace,2335.08,58,,negotiated_dollar,2335.08,percent of total billed charges
+Grady Memorial Hospital,Head/Brain CT W/O Dye Ect,,351,35100001,,70450,,,,facility,,outpatient,4026,4026,595.85,3220.8,USP Naphcare,Commercial,2415.6,60,,negotiated_dollar,2415.6,percent of total billed charges
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,528.15,528.15,UHC,Exchange/Marketplace,528.15,,,negotiated_dollar,528.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,528.15,528.15,UHC,Surest Health,528.15,,,negotiated_dollar,528.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Aetna,Commercial,1475,,,negotiated_dollar,1475,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Aetna,Medicare,105.81,,,negotiated_dollar,105.81,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Ambetter,Marketplace,105.81,,,negotiated_dollar,105.81,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Anthem BCBS,HMO/POS,785.72,,,negotiated_dollar,785.72,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Anthem BCBS,Medicare,105.81,,,negotiated_dollar,105.81,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Anthem BCBS,PPO,785.72,,,negotiated_dollar,785.72,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Anthem BCBS,Pathways/Marketplace,785.72,,,negotiated_dollar,785.72,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Caresource,Marketplace,169.29,,,negotiated_dollar,169.29,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Cigna,Commercial,,59.15,,unavailable,,percent of total billed charges
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Cigna,IFP,148.02,,,negotiated_dollar,148.02,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Cigna,Medicare,105.81,,,negotiated_dollar,105.81,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Clear Spring Health,Medicare,111.1,,,negotiated_dollar,111.1,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Clover,Medicare,111.1,,,negotiated_dollar,111.1,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Humana,Medicare,105.81,,,negotiated_dollar,105.81,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Kaiser,Medicare,105.81,,,negotiated_dollar,105.81,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Medicare,Medicare,105.81,,,negotiated_dollar,105.81,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,Oscar Health,Commercial/Marketplace,175.47,,,negotiated_dollar,175.47,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,UHC,Medicare,105.81,,,negotiated_dollar,105.81,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,USP Naphcare,Commercial,195.74,,,negotiated_dollar,195.74,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,VACCN,Commercial,105.81,,,negotiated_dollar,105.81,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,105.81,1475,WellCare,Medicare,105.81,,,negotiated_dollar,105.81,case rate
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,528.15,528.15,UHC,Charter,528.15,,,negotiated_dollar,528.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,528.15,528.15,UHC,Commercial,528.15,,,negotiated_dollar,528.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,facility,,outpatient,,,528.15,528.15,UHC,Core,528.15,,,negotiated_dollar,528.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Aetna,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Ambetter,Marketplace,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Amerigroup,Medicaid,37.64,,,negotiated_dollar,37.64,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Anthem BCBS,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Caresource,Commercial,37.64,,,negotiated_dollar,37.64,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Caresource,Marketplace,62.32,,,negotiated_dollar,62.32,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Cigna,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Clear Spring Health,Medicare,40.9,,,negotiated_dollar,40.9,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Clover,Medicare,40.9,,,negotiated_dollar,40.9,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Humana,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Kaiser,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Medicare,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Oscar Health,Commercial/Marketplace,54.74,,,negotiated_dollar,54.74,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Peach State,Medicaid,37.64,,,negotiated_dollar,37.64,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,UHC,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,USP Naphcare,Commercial,42.85,,,negotiated_dollar,42.85,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,VACCN,Commercial,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,WellCare,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Aetna,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Ambetter,Marketplace,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Amerigroup,Medicaid,37.64,,,negotiated_dollar,37.64,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Anthem BCBS,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Caresource,Commercial,37.64,,,negotiated_dollar,37.64,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Caresource,Marketplace,62.32,,,negotiated_dollar,62.32,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Cigna,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Clear Spring Health,Medicare,40.9,,,negotiated_dollar,40.9,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Clover,Medicare,40.9,,,negotiated_dollar,40.9,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Humana,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Kaiser,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Medicare,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Oscar Health,Commercial/Marketplace,54.74,,,negotiated_dollar,54.74,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,Peach State,Medicaid,37.64,,,negotiated_dollar,37.64,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,UHC,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,USP Naphcare,Commercial,42.85,,,negotiated_dollar,42.85,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,VACCN,Commercial,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,26,outpatient,,,37.64,62.32,WellCare,Medicare,38.95,,,negotiated_dollar,38.95,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Aetna,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Ambetter,Marketplace,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Amerigroup,Medicaid,160.62,,,negotiated_dollar,160.62,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Anthem BCBS,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Caresource,Commercial,160.62,,,negotiated_dollar,160.62,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Caresource,Marketplace,105.84,,,negotiated_dollar,105.84,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Cigna,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Clear Spring Health,Medicare,69.46,,,negotiated_dollar,69.46,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Clover,Medicare,69.46,,,negotiated_dollar,69.46,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Humana,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Kaiser,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Medicare,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Oscar Health,Commercial/Marketplace,94.67,,,negotiated_dollar,94.67,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Peach State,Medicaid,160.62,,,negotiated_dollar,160.62,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,UHC,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,USP Naphcare,Commercial,72.77,,,negotiated_dollar,72.77,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,VACCN,Commercial,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,WellCare,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Aetna,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Ambetter,Marketplace,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Amerigroup,Medicaid,160.62,,,negotiated_dollar,160.62,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Anthem BCBS,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Caresource,Commercial,160.62,,,negotiated_dollar,160.62,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Caresource,Marketplace,105.84,,,negotiated_dollar,105.84,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Cigna,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Clear Spring Health,Medicare,69.46,,,negotiated_dollar,69.46,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Clover,Medicare,69.46,,,negotiated_dollar,69.46,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Humana,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Kaiser,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Medicare,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Oscar Health,Commercial/Marketplace,94.67,,,negotiated_dollar,94.67,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,Peach State,Medicaid,160.62,,,negotiated_dollar,160.62,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,UHC,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,USP Naphcare,Commercial,72.77,,,negotiated_dollar,72.77,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,VACCN,Commercial,66.15,,,negotiated_dollar,66.15,fee schedule
+Grady Memorial Hospital,Ct head/brain w/o dye,,,,,70450,,,,professional,TC,outpatient,,,66.15,160.62,WellCare,Medicare,66.15,,,negotiated_dollar,66.15,fee schedule
