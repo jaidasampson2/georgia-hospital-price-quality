@@ -242,3 +242,5 @@ data/processed/*
 !data/processed/emory_sample_flat.csv
 !data/processed/grady_sample_flat.csv
 !data/processed/piedmont_sample_flat.csv
+!data/processed/wellstar_sample_flat.csv
+!data/processed/choa_sample_flat.csv
