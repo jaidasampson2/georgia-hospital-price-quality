@@ -11,6 +11,16 @@ Northside specifically, expect price_type to only ever resolve as
 "negotiated_dollar", "percent_of_billed", or "unavailable" -- never
 "median_estimate". That's a real structural difference between the JSON
 and CSV templates, worth noting in the audit.
+
+BUGFIX: this script previously pulled hospital_name directly from the
+JSON file's own "hospital_name" field, which is Northside's internal
+corporate name ("Northside Hospital, Inc."), NOT the canonical name used
+everywhere else in this project ("Northside Hospital Atlanta" --
+matching config/hospitals.csv). That mismatch caused every Northside row
+to silently fail to match any hospital in load_database.py. Now hardcoded
+to the canonical name, same convention as every other flatten_*.py
+script -- source files' self-reported names should never be trusted as
+the join key.
 """
 
 import json
@@ -20,6 +30,12 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 INPUT_FILE = PROJECT_ROOT / "data" / "sample" / "northside_sample.json"
 OUTPUT_FILE = PROJECT_ROOT / "data" / "processed" / "northside_sample_flat.csv"
+
+# Canonical name, matching config/hospitals.csv -- NOT the same as the
+# "hospital_name" field inside Northside's own JSON file, which is its
+# internal corporate name ("Northside Hospital, Inc.") rather than the
+# name used consistently across this project.
+HOSPITAL_NAME = "Northside Hospital Atlanta"
 
 OUTPUT_COLUMNS = [
     "hospital_name",
@@ -172,7 +188,9 @@ def main() -> None:
     with open(INPUT_FILE, "r") as f:
         data = json.load(f, parse_float=Decimal)
 
-    hospital_name = data.get("hospital_name", "")
+    # Use the canonical project-wide name, NOT data.get("hospital_name"),
+    # which would pull Northside's own internal corporate name instead.
+    hospital_name = HOSPITAL_NAME
     services = data.get("standard_charge_information", [])
 
     all_rows = []
