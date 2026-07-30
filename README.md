@@ -6,26 +6,27 @@ files (MRFs) alongside CMS hospital quality data.
 
 ## Hospitals in This Project
 
-| Hospital | City | Source Format | Status |
-|---|---|---|---|
-| Emory University Hospital | Atlanta | CSV (flat) | Fully loaded |
-| Grady Memorial Hospital | Atlanta | CSV (wide/pivoted) | Fully loaded |
-| Northside Hospital Atlanta | Atlanta | JSON (nested) | Fully loaded |
-| Piedmont Atlanta Hospital | Atlanta | ZIP → CSV (flat) | Fully loaded |
-| Wellstar Kennestone Hospital | Marietta | CSV (flat) | Fully loaded |
-| Arthur M. Blank Hospital (CHOA) | Atlanta | CSV (flat) | Fully loaded |
+| Hospital | City | Source Format | CCN | Status |
+|---|---|---|---|---|
+| Emory University Hospital | Atlanta | CSV (flat) | 110010 | Fully loaded |
+| Grady Memorial Hospital | Atlanta | CSV (wide/pivoted) | 110079 | Fully loaded |
+| Northside Hospital Atlanta | Atlanta | JSON (nested) | 110161 | Fully loaded |
+| Piedmont Atlanta Hospital | Atlanta | ZIP → CSV (flat) | 110083 | Fully loaded |
+| Wellstar Kennestone Hospital | Marietta | CSV (flat) | 110035 | Fully loaded |
+| Arthur M. Blank Hospital (CHOA) | Atlanta | CSV (flat) | 113300 | Fully loaded |
+
+CCN = CMS Certification Number, looked up by hand via CMS.gov / Care
+Compare listings for each hospital, used to join pricing data to CMS
+quality measures.
 
 ## Target Procedures
-
-Four procedures were selected as the project's comparison set, chosen
-for having recognizable, common billing codes:
 
 | Procedure | Codes Used | Notes |
 |---|---|---|
 | Head/Brain CT (no contrast) | CPT/HCPCS 70450 | |
 | Knee MRI (no contrast) | CPT/HCPCS 73721 | |
 | Colonoscopy | CPT/HCPCS 45378 **and** 45380 | See "Colonoscopy code variants" below |
-| Cardiac Stress Test | CPT/HCPCS 93017 | |
+| Cardiac Stress Test | CPT/HCPCS 93017 | See caveat under Price vs. Quality Analysis |
 
 ## Data Pipeline Structure
 
@@ -33,9 +34,7 @@ for having recognizable, common billing codes:
   from each hospital. Excluded from version control via `.gitignore`
   (50MB–900MB+ each).
 - **`data/sample/`** — Targeted excerpts of each hospital's raw file,
-  containing only rows matching one of the four target procedure codes
-  (searched across the FULL raw file, not just the first N rows —
-  see "Sampling Methodology" below).
+  containing only rows matching one of the four target procedure codes.
 - **`data/processed/`** — Output of `src/flatten_*.py`, mapping each
   hospital's raw structure onto the unified schema described below.
 - **`data/hospital_prices.db`** — Normalized SQLite database (gitignored;
@@ -45,28 +44,19 @@ for having recognizable, common billing codes:
 
 **Random samples don't work for cross-hospital comparison.** An early
 approach pulling the first 25 rows from each hospital's file produced
-zero overlapping services across all six hospitals — every hospital's
-random slice landed on a different category of item (drugs, room
-types, surgical supplies, DRG charges). Meaningful comparison requires
-deliberately searching for the same procedure everywhere.
-
-`src/sample_by_code.py` (CSV-based hospitals) and
-`src/sample_northside_by_code.py` (Northside's JSON) instead stream
-through each hospital's **entire** raw file and keep only rows matching
-a specific billing code + code type, capped at 200 matches per search.
-None of the searches in this project hit that cap — every match count
-reported below reflects a hospital's complete published data for that
-code, not a truncated sample. These scripts overwrite each hospital's
-`data/sample/*` file — sample files represent "the last procedure
-searched for," not a fixed random excerpt.
+zero overlapping services across all six hospitals. `src/sample_by_code.py`
+(CSV-based hospitals) and `src/sample_northside_by_code.py` (Northside's
+JSON) instead stream through each hospital's **entire** raw file and
+keep only rows matching a specific billing code + code type, capped at
+200 matches per search. None of the searches in this project hit that
+cap — every match count reflects a hospital's complete published data
+for that code.
 
 ### Database loading: `--append` mode
 
 Because each procedure search overwrites the same sample files,
 `src/load_database.py` needed an `--append` flag to avoid wiping
-previously-loaded procedures every time a new one was searched. Without
-it, searching for Knee MRI after Head CT would delete the Head CT data
-before loading Knee MRI. Usage:
+previously-loaded procedures. Usage:
 
     python3 src/load_database.py            # full reset
     python3 src/load_database.py --append    # add without wiping existing rows
@@ -78,7 +68,7 @@ before loading Knee MRI. Usage:
 | `hospital_name` | Hospital this record belongs to |
 | `description` | Service/item description as published |
 | `ndc_code`, `revenue_code`, `cdm_code`, `hcpcs_code`, `cpt_code`, `drg_code` | Billing codes, routed by type. Unmapped types (`APC`, `LOCAL`) are dropped rather than guessed into the wrong column. |
-| `billing_class` | `facility`, `professional`, or blank — see billing_class finding below |
+| `billing_class` | `facility`, `professional`, or blank |
 | `modifiers` | e.g. `26` (professional interpretation only) or `TC` (technical component only) |
 | `drug_unit`, `drug_unit_type` | Only populated for drug/medication line items |
 | `setting` | inpatient / outpatient |
@@ -87,7 +77,7 @@ before loading Knee MRI. Usage:
 | `negotiated_price` | Exact negotiated dollar amount, only when published directly |
 | `negotiated_percentage` | Percent-of-billed-charges rate, when used instead of a dollar amount |
 | `median_amount` | Historical median claims amount, when published instead of/alongside a negotiated dollar amount |
-| `price_type` | Labels what kind of number `resolved_price` is (see below) |
+| `price_type` | Labels what kind of number `resolved_price` is |
 | `resolved_price` | Best available usable price estimate |
 | `methodology` | Hospital's stated pricing methodology for this rate |
 
@@ -102,86 +92,46 @@ before loading Knee MRI. Usage:
 
 ### 1. Identical CPT code + description can mean genuinely different services (billing_class)
 
-Investigating unexplained price variation for Grady's Head CT data
-(five different prices for what looked like one identical service)
-revealed the file separately bills:
-- **facility** — the hospital's facility fee ($105.81)
-- **professional, modifier 26** — physician interpretation only ($38.95)
-- **professional, modifier TC** — technical component only ($66.15)
-
-These are legitimately different billing entities sharing one CPT
-code — standard U.S. medical billing practice, not a data error. Only
-Grady splits this way among the six hospitals in this project (Emory
-and Wellstar report facility only; Northside, Piedmont, and CHOA
-report no billing_class split at all). **All cross-hospital price
-comparisons in this project exclude billing_class = 'professional'
-rows**, since no other hospital reports a comparable professional-fee
-line, and including Grady's would silently compare a physician fee
-against other hospitals' full facility charges.
+Grady's Head CT data showed five different prices for what looked like
+one identical service. The file separately bills **facility** ($105.81),
+**professional, modifier 26** (interpretation only, $38.95), and
+**professional, modifier TC** (technical component only, $66.15) —
+legitimately different billing entities sharing one CPT code. Only
+Grady splits this way among the six hospitals. **All cross-hospital
+price comparisons in this project exclude billing_class = 'professional'
+rows.**
 
 ### 2. The same procedure code can be labeled a different "code type" across hospitals
 
-Emory and Wellstar returned **zero matches** across all four target
-procedures when searched under CPT — not because they lack this
-data, but because **neither hospital uses the label "CPT" anywhere in
-their files.** A full code-type frequency scan (src/count_code_types.py)
-showed both hospitals label the same codes HCPCS instead (CPT codes
-are technically a subset of HCPCS Level I). Re-searching under
-HCPCS recovered real data for both hospitals across all four
-procedures. **Any cross-hospital query must check both cpt_code and
-hcpcs_code** — filtering on one field alone will silently and
-incorrectly exclude hospitals that label the same codes differently.
+Emory and Wellstar returned zero matches under CPT for all four target
+procedures because neither hospital uses the label "CPT" anywhere in
+their files — both label the same codes HCPCS instead. Re-searching
+under HCPCS recovered real data for both. **Any cross-hospital query
+must check both cpt_code and hcpcs_code.**
 
 ### 3. Colonoscopy code variants (45378 vs. 45380)
 
-Piedmont returned zero matches for CPT 45378 (diagnostic-only
-colonoscopy) but had substantial data under CPT 45380 (colonoscopy with
-biopsy) — the more common real-world billing code, since most
-colonoscopies performed clinically find and address something. To keep
-the comparison fair, **both codes were searched and loaded for every
-hospital**, rather than using a different code for one hospital only.
-CHOA (pediatric) has neither code — a genuine, expected absence given
-its patient population, not a data gap.
+Piedmont had zero data under CPT 45378 (diagnostic-only) but
+substantial data under 45380 (colonoscopy with biopsy) — the more
+common real-world billing code. Both codes were searched and loaded
+for every hospital. CHOA (pediatric) has neither — a genuine, expected
+absence.
 
 ### 4. Outliers require median, not average, for honest comparison
 
-Initial average-based comparisons were distorted by a small number of
-extreme outlier rates — most notably a **$50,000 "colonoscopy" rate at
-Northside** under the payer name CHAMPUS VA, roughly 9x the next
-highest rate in the entire dataset. These are almost certainly
-out-of-network/workers'-comp ceiling rates, not real negotiated prices.
-**All final comparisons use median, not average**, since median is far
-more resistant to this kind of extreme outlier without needing to
-manually identify and exclude every suspicious payer by name.
+A $50,000 "colonoscopy" rate at Northside (payer: CHAMPUS VA), ~9x the
+next highest rate in the dataset, distorted average-based comparisons.
+**All final price comparisons use median, not average.**
 
 ### 5. Emory and Wellstar's low prices are partly, but not fully, explained by payer mix
 
-Emory and Wellstar's total sample sizes for these four procedures
-(12-38 rate observations) are an order of magnitude smaller than
-Northside's (134-3,168) — and their samples are dominated by
-Medicare Advantage payers (Devoted Health, Cigna Healthspring, Clover,
-Wellcare, BCBS Blue Value Secure). Since Medicare-linked rates are
-structurally lower than commercial rates industry-wide, this was
-tested directly by excluding Medicare-branded payers and recomputing
-medians (`sql/median_commercial_only.sql`):
-
-| Procedure | Emory: all payers | Emory: excl. Medicare | Wellstar: all payers | Wellstar: excl. Medicare |
-|---|---|---|---|---|
-| Head CT | $129.13 (n=13) | $280.20 (n=7) | $177.60 (n=12) | $202.29 (n=8) |
-| Knee MRI | $270.72 (n=13) | $582.60 (n=7) | $407.33 (n=12) | $461.68 (n=8) |
-| Cardiac Stress | $223.07 (n=14) | $459.14 (n=2) | $386.00 (n=18) | $429.86 (n=10) |
-
-**The result is genuinely mixed, not a clean fix.** Removing
-Medicare-branded payers raised both hospitals' medians meaningfully
-(confirming Medicare-payer skew was a real, contributing factor), but
-the gap to other hospitals did not close — and the remaining
-commercial-only samples are themselves too small (n=2 to n=10) to
-support a confident median. **The honest conclusion: there is not
-enough commercial-payer data published by Emory and Wellstar for these
-specific procedures to determine their true typical price with
-confidence, in either direction.** This is presented as a data
-completeness limitation of these two hospitals' published files, not
-as evidence that their prices are or are not genuinely lower.
+Their samples (12-38 observations) are dominated by Medicare Advantage
+payers. Excluding Medicare-branded payers raised their medians
+meaningfully but didn't close the gap to other hospitals, and the
+remaining commercial-only samples (n=2 to n=10) are too small to be
+reliable. **Conclusion: insufficient commercial-payer data published by
+these two hospitals for these procedures to determine their true
+typical price with confidence, in either direction.**
 
 ## Median Price Comparison (facility-only, outlier-resistant, all payers)
 
@@ -196,9 +146,84 @@ Query: `sql/median_by_procedure.sql`
 | Emory (see Finding 5) | $129.13 | $270.72 | $3,051.00 | $223.07 |
 | Wellstar (see Finding 5) | $177.60 | $407.33 | $1,995.27 | $386.00 |
 
-Emory and Wellstar figures are directionally informative but should not
-be treated as confidently comparable to the other four hospitals — see
-Finding 5 for the tested explanation and its limits.
+## Price vs. Quality Analysis
+
+### Methodology
+
+`src/fetch_cms_quality.py` pulls each hospital's quality data from
+CMS's "Hospital General Information" dataset (xubh-q36u — the same
+data behind Care Compare's star ratings), matched by CCN. It downloads
+the full national CSV once and filters locally, after the dataset's
+server-side query API returned unreliable 400 errors on filtered
+requests.
+
+**CHOA (Arthur M. Blank Hospital) has no CMS quality rating at all.**
+CMS's standard adult hospital quality reporting program largely
+excludes pediatric hospitals — confirmed directly in the data (every
+measure returns "Not Available"). CHOA is excluded from all
+price-vs-quality comparisons below.
+
+**Emory and Wellstar are also excluded from this analysis specifically**
+(despite having star ratings), because their price data is already
+flagged as low-confidence (Finding 5) — comparing an unreliable price
+against a real quality rating would produce a misleading result.
+
+This leaves **3 hospitals** with both reliable price data and a
+standard CMS rating: Grady (2★), Northside (3★), Piedmont (4★).
+
+### Overall star rating vs. median price, by procedure
+
+| Procedure | Grady (2★) | Northside (3★) | Piedmont (4★) | Rating predicts price? |
+|---|---|---|---|---|
+| Head CT | $627.65 | $1,134.50 | $654.50 | No |
+| Knee MRI | $1,116.25 | $1,678.00 | $1,754.00 | Yes |
+| Colonoscopy | $1,362.00 | $667.96 | $3,455.76 | No |
+| Cardiac Stress Test¹ | $2,100.81 | $888.77 | $2,484.90 | No |
+
+¹ Grady's cardiac stress test rows are labeled "Stress Echo," which
+typically denotes a combined stress test + echocardiogram (usually
+billed under different CPT codes, e.g. 93350/93351) rather than the
+tracing-only service CPT 93017 specifically denotes. This may not be a
+fully comparable service to the other hospitals' rows under this code —
+a data quality caveat, not a corrected result.
+
+**Only 1 of 4 procedures (Knee MRI) shows higher rating predicting
+higher price.** With only 3 comparable hospitals, this dataset does not
+support a price-quality relationship in either direction.
+
+### Component-level quality measures complicate the picture further
+
+Rather than relying on the single blended star rating, a supplementary
+query broke out CMS's underlying safety and readmission measure counts:
+
+| Hospital | Overall Rating | Safety Measures "Better" | Readmission Measures "Better" |
+|---|---|---|---|
+| Emory | 4★ | 1 of 8 | 1 of 11 |
+| Piedmont | 4★ | 4 of 8 | 0 of 11 |
+| Wellstar | 4★ | 4 of 8 | 1 of 11 |
+| Northside | 3★ | 1 of 8 | 0 of 10 |
+| Grady | 2★ | **3 of 7** | 0 of 8 |
+
+**Grady — the lowest overall-rated hospital in this project — actually
+outperforms both Northside and Emory on the specific safety measure
+count** (43% "better than national average" vs. 12% for the other two).
+Grady's low composite rating appears to be driven primarily by weak
+readmission performance (0 of 8 "better," in line with most hospitals
+in this dataset, so not especially distinguishing) rather than
+uniformly lower quality of care.
+
+### Conclusion
+
+This dataset does not support treating a hospital's overall star rating
+as a reliable proxy for either price or quality on a per-component
+basis. Prices did not consistently track star ratings across
+procedures (1 of 4 matched), and a hospital's composite rating can mask
+meaningfully different performance across its individual quality
+dimensions — a lower-rated hospital (Grady) scored better than
+higher-rated peers on a specific, real safety metric. With only 3
+hospitals carrying both reliable price data and a standard CMS rating,
+this sample is also too small to detect a genuine relationship even if
+one exists at a larger scale.
 
 ## How to Reproduce
 
@@ -208,19 +233,19 @@ Finding 5 for the tested explanation and its limits.
    (or `src/sample_northside_by_code.py <code> <type>` for Northside)
 3. Flatten into the unified schema: `python3 src/flatten_<hospital>_sample.py`
 4. Load into the database: `python3 src/load_database.py --append`
-5. Recreate the database from scratch if needed:
+5. Fetch CMS quality measures: `python3 src/fetch_cms_quality.py`
+6. Recreate the database from scratch if needed:
    `rm data/hospital_prices.db && sqlite3 data/hospital_prices.db < sql/schema.sql`
 
 ## Next Steps
 
-- Build the Tableau/Power BI dashboard comparing prices across hospitals
-  and procedures, incorporating the median-vs-average and sample-size
-  caveats documented above.
-- Build the CMS quality-measures integration and join to this pricing
-  data for the price-vs-quality analysis.
-- Investigate CHOA's colonoscopy gap further (confirmed absent under
-  both 45378 and 45380 — likely a genuine pediatric-population effect).
+- Build the Tableau/Power BI dashboard incorporating the median-vs-
+  average, sample-size, and price-quality caveats documented above.
+- Consider pulling procedure-specific CMS measures (e.g. imaging
+  efficiency measures, where still tracked) if a more targeted quality
+  comparison is wanted, with the understanding that CMS's standard
+  measure set is largely inpatient-focused and doesn't map cleanly onto
+  this project's four (mostly outpatient) target procedures.
 - Emory/Wellstar's commercial-payer data gap (Finding 5) is a genuine,
-  documented limitation rather than something to "fix" further within
-  this project's data source — worth stating plainly in any final
-  write-up rather than presenting their medians at face value.
+  documented limitation of their published files, not something to
+  "fix" further within this project's data source.
