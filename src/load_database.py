@@ -1,19 +1,21 @@
 """
-Load all six hospitals' flattened sample data into the SQLite database
-defined in sql/schema.sql.
+Load hospitals' flattened data into the SQLite database defined in
+sql/schema.sql.
 
-UPDATE: billing_class and modifiers are now part of SERVICE_KEY_COLUMNS
-and the services table. Discovery: the same CPT code + same description
-can cover genuinely different billing entities (facility fee vs.
-professional-interpretation-only vs. technical-component-only), which
-looked like unexplained duplicate prices until these fields were added.
-Two rows now count as the SAME service only if they also match on
-billing_class and modifiers.
+UPDATE: added --append mode. Previously this script always wiped the
+database before reloading -- fine while iterating on one procedure's
+sample data, but a problem now that we're searching for MULTIPLE
+procedures one at a time (each search overwrites the same hospital
+sample files). Without --append, loading Knee MRI data after Head CT
+data would DELETE the Head CT rows first, losing the earlier procedure
+instead of accumulating a full multi-procedure dataset.
 
-Safe to re-run: clears out existing hospitals/services/prices data
-before reloading.
+Usage:
+    python3 src/load_database.py            # full reset (default, same as before)
+    python3 src/load_database.py --append    # add this run's data without wiping existing rows
 """
 
+import argparse
 import csv
 import sqlite3
 from pathlib import Path
@@ -42,9 +44,6 @@ FLAT_FILES = [
     "choa_sample_flat.csv",
 ]
 
-# UPDATE: billing_class and modifiers added -- two rows with identical
-# codes/description but different billing_class or modifiers are
-# genuinely different services (e.g. facility vs. professional fee).
 SERVICE_KEY_COLUMNS = [
     "description", "ndc_code", "revenue_code", "cdm_code",
     "hcpcs_code", "cpt_code", "drg_code", "drug_unit", "drug_unit_type",
@@ -61,10 +60,17 @@ def to_float(value: str):
         return None
 
 
-def reset_database(conn: sqlite3.Connection) -> None:
+def ensure_schema(conn: sqlite3.Connection) -> None:
+    """Make sure tables exist. Safe to call every time -- CREATE TABLE
+    IF NOT EXISTS does nothing if they're already there."""
     with open(SCHEMA_FILE, "r") as f:
         conn.executescript(f.read())
+    conn.commit()
 
+
+def wipe_database(conn: sqlite3.Connection) -> None:
+    """Full reset: delete all existing rows. Only used when --append is
+    NOT passed."""
     conn.execute("DELETE FROM prices")
     conn.execute("DELETE FROM services")
     conn.execute("DELETE FROM hospitals")
@@ -75,13 +81,30 @@ def reset_database(conn: sqlite3.Connection) -> None:
     conn.commit()
 
 
-def load_hospitals(conn: sqlite3.Connection) -> dict:
+def load_hospitals(conn: sqlite3.Connection, append: bool) -> dict:
+    """
+    In non-append mode: insert all hospitals fresh (table was just
+    wiped). In append mode: reuse existing hospital rows if they're
+    already there, only inserting hospitals that are genuinely new.
+    """
     hospital_ids = {}
+
+    if append:
+        existing = conn.execute(
+            "SELECT hospital_id, hospital_name FROM hospitals"
+        ).fetchall()
+        for hospital_id, name in existing:
+            hospital_ids[name] = hospital_id
 
     with open(HOSPITALS_FILE, "r", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
             name = row["hospital_name"]
+
+            if append and name in hospital_ids:
+                # Already in the database from an earlier run -- reuse it.
+                continue
+
             cursor = conn.execute(
                 """
                 INSERT INTO hospitals
@@ -100,6 +123,31 @@ def load_hospitals(conn: sqlite3.Connection) -> dict:
 
     conn.commit()
     return hospital_ids
+
+
+def load_existing_services(conn: sqlite3.Connection) -> dict:
+    """
+    In append mode, seed the service_cache with services already in the
+    database, so a procedure search that happens to re-match a service
+    from an earlier run reuses the same service_id instead of creating
+    a duplicate row.
+    """
+    service_cache = {}
+    rows = conn.execute(
+        """
+        SELECT service_id, hospital_id, description, ndc_code, revenue_code,
+               cdm_code, hcpcs_code, cpt_code, drg_code, drug_unit,
+               drug_unit_type, billing_class, modifiers
+        FROM services
+        """
+    ).fetchall()
+
+    for row in rows:
+        service_id = row[0]
+        key = tuple(v if v is not None else "" for v in row[1:])
+        service_cache[key] = service_id
+
+    return service_cache
 
 
 def get_or_create_service(conn: sqlite3.Connection, service_cache: dict,
@@ -196,16 +244,33 @@ def load_prices_file(conn: sqlite3.Connection, filepath: Path,
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Load flattened hospital CSVs into the SQLite database."
+    )
+    parser.add_argument(
+        "--append", action="store_true",
+        help="Add this run's data without wiping existing rows first."
+    )
+    args = parser.parse_args()
+
     conn = sqlite3.connect(DB_FILE)
 
-    print("Resetting database (schema + clearing old rows)...")
-    reset_database(conn)
+    ensure_schema(conn)
+
+    if args.append:
+        print("Running in --append mode: existing data will NOT be wiped.")
+    else:
+        print("Resetting database (wiping existing rows)...")
+        wipe_database(conn)
 
     print("Loading hospitals...")
-    hospital_ids = load_hospitals(conn)
-    print(f"  Loaded {len(hospital_ids)} hospitals.")
+    hospital_ids = load_hospitals(conn, append=args.append)
+    print(f"  {len(hospital_ids)} hospitals in database.")
 
-    service_cache = {}
+    service_cache = load_existing_services(conn) if args.append else {}
+    if args.append:
+        print(f"  Seeded cache with {len(service_cache)} existing services.")
+
     total_price_rows = 0
 
     print("Loading services + prices from each hospital's flattened CSV...")
@@ -215,9 +280,12 @@ def main() -> None:
         print(f"  {filename}: {rows_loaded} price rows loaded.")
         total_price_rows += rows_loaded
 
-    print(f"\nDone. {len(hospital_ids)} hospitals, "
-          f"{len(service_cache)} unique services, "
-          f"{total_price_rows} price rows.")
+    total_services = conn.execute("SELECT COUNT(*) FROM services").fetchone()[0]
+    total_prices_in_db = conn.execute("SELECT COUNT(*) FROM prices").fetchone()[0]
+
+    print(f"\nThis run added {total_price_rows} price rows.")
+    print(f"Database now contains: {len(hospital_ids)} hospitals, "
+          f"{total_services} unique services, {total_prices_in_db} total price rows.")
 
     conn.close()
 
