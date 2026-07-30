@@ -1,26 +1,26 @@
-hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,methodology
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Medicare Managed Care Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Hmo/Pos,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Ppo,,percent of total billed charges
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Hpn Whole Health Other Commercial Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Indemnity Traditional,,percent of total billed charges
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Exchange,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Ambetter Health,Peach State Exchange,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Amerigroup,Medicaid Managed Care Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Hmo,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Ppo,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Hpn Other Commercial Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Blue Pathways Exchange,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Blue Value Secure Medicare Managed Care Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Caresource,Medicaid Managed Care Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Cigna,Healthspring Medicare Managed Care Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Cigna,Ppo,,percent of total billed charges
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Cigna,Hmo/Pos,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Clover Health,Medicare Managed Care Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Devoted Health,Medicare Managed Care Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Humana,Medicare Managed Care Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Humana,Ppo,,percent of total billed charges
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Kaiser,Medicare Managed Care Plan,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Kaiser,Hmo,,other
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Kaiser,Ppo,,percent of total billed charges
-Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Multiplan,Ppo,,percent of total billed charges
+hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,negotiated_percentage,median_amount,price_type,resolved_price,methodology
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Medicare Managed Care Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Hmo/Pos,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Ppo,,72,,unavailable,,percent of total billed charges
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Hpn Whole Health Other Commercial Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Indemnity Traditional,,95,,unavailable,,percent of total billed charges
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Aetna,Exchange,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Ambetter Health,Peach State Exchange,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Amerigroup,Medicaid Managed Care Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Hmo,,,826.65,median_estimate,826.65,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Ppo,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Hpn Other Commercial Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Blue Pathways Exchange,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Bcbs,Blue Value Secure Medicare Managed Care Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Caresource,Medicaid Managed Care Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Cigna,Healthspring Medicare Managed Care Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Cigna,Ppo,,72,,unavailable,,percent of total billed charges
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Cigna,Hmo/Pos,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Clover Health,Medicare Managed Care Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Devoted Health,Medicare Managed Care Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Humana,Medicare Managed Care Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Humana,Ppo,,75,,unavailable,,percent of total billed charges
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Kaiser,Medicare Managed Care Plan,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Kaiser,Hmo,,,,unavailable,,other
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Kaiser,Ppo,,70,,unavailable,,percent of total billed charges
+Emory University Hospital,"Inj, brixadi, 7 days or less",,,,,,,,,outpatient,,,,,Multiplan,Ppo,,90,,unavailable,,percent of total billed charges

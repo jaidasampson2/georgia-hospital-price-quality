@@ -1,101 +1,101 @@
-hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,methodology
-Grady Memorial Hospital,HB Med-Sur-Gy/Pvt,,111,11100001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Anthem BCBS,HPN,3319.68,percent of total billed charges
-Grady Memorial Hospital,HB Med-Sur-Gy/Pvt,,111,11100001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Kaiser,Commercial,3145.4,percent of total billed charges
-Grady Memorial Hospital,HB Med-Sur-Gy/Pvt,,111,11100001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Multiplan,Commercial,3195.19,percent of total billed charges
-Grady Memorial Hospital,HB Med-Sur-Gy/Pvt,,111,11100001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,USP Naphcare,Commercial,2489.76,percent of total billed charges
-Grady Memorial Hospital,HB Pvt Gyn,,111,11100021,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Anthem BCBS,HPN,3319.68,percent of total billed charges
-Grady Memorial Hospital,HB Pvt Gyn,,111,11100021,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Kaiser,Commercial,3145.4,percent of total billed charges
-Grady Memorial Hospital,HB Pvt Gyn,,111,11100021,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Multiplan,Commercial,3195.19,percent of total billed charges
-Grady Memorial Hospital,HB Pvt Gyn,,111,11100021,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,USP Naphcare,Commercial,2489.76,percent of total billed charges
-Grady Memorial Hospital,Tele Private Gyn,,111,11100023,,,,,,inpatient,4323.9,4323.9,2594.34,3459.12,Anthem BCBS,HPN,3459.12,percent of total billed charges
-Grady Memorial Hospital,Tele Private Gyn,,111,11100023,,,,,,inpatient,4323.9,4323.9,2594.34,3459.12,Kaiser,Commercial,3277.52,percent of total billed charges
-Grady Memorial Hospital,Tele Private Gyn,,111,11100023,,,,,,inpatient,4323.9,4323.9,2594.34,3459.12,Multiplan,Commercial,3329.4,percent of total billed charges
-Grady Memorial Hospital,Tele Private Gyn,,111,11100023,,,,,,inpatient,4323.9,4323.9,2594.34,3459.12,USP Naphcare,Commercial,2594.34,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Med Surg,,111,11100501,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Anthem BCBS,HPN,3479.28,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Med Surg,,111,11100501,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Kaiser,Commercial,3296.62,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Med Surg,,111,11100501,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Multiplan,Commercial,3348.81,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Med Surg,,111,11100501,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,USP Naphcare,Commercial,2609.46,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Gyn,,111,11100521,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Anthem BCBS,HPN,3479.28,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Gyn,,111,11100521,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Kaiser,Commercial,3296.62,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Gyn,,111,11100521,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Multiplan,Commercial,3348.81,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Gyn,,111,11100521,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,USP Naphcare,Commercial,2609.46,percent of total billed charges
-Grady Memorial Hospital,Tele Private Med Surg,,111,11100003,,,,,,inpatient,4583.25,4583.25,2749.95,3666.6,Anthem BCBS,HPN,3666.6,percent of total billed charges
-Grady Memorial Hospital,Tele Private Med Surg,,111,11100003,,,,,,inpatient,4583.25,4583.25,2749.95,3666.6,Kaiser,Commercial,3474.1,percent of total billed charges
-Grady Memorial Hospital,Tele Private Med Surg,,111,11100003,,,,,,inpatient,4583.25,4583.25,2749.95,3666.6,Multiplan,Commercial,3529.1,percent of total billed charges
-Grady Memorial Hospital,Tele Private Med Surg,,111,11100003,,,,,,inpatient,4583.25,4583.25,2749.95,3666.6,USP Naphcare,Commercial,2749.95,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private Med Surg,,111,11100503,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Anthem BCBS,HPN,3806.88,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private Med Surg,,111,11100503,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Kaiser,Commercial,3607.02,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private Med Surg,,111,11100503,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Multiplan,Commercial,3664.12,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private Med Surg,,111,11100503,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,USP Naphcare,Commercial,2855.16,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private Gyn,,111,11100523,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Anthem BCBS,HPN,3806.88,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private Gyn,,111,11100523,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Kaiser,Commercial,3607.02,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private Gyn,,111,11100523,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Multiplan,Commercial,3664.12,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private Gyn,,111,11100523,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,USP Naphcare,Commercial,2855.16,percent of total billed charges
-Grady Memorial Hospital,Trauma Private OB,,112,11200501,,,,,,inpatient,3961.65,3961.65,2376.99,3169.32,Anthem BCBS,HPN,3169.32,percent of total billed charges
-Grady Memorial Hospital,Trauma Private OB,,112,11200501,,,,,,inpatient,3961.65,3961.65,2376.99,3169.32,Kaiser,Commercial,3002.93,percent of total billed charges
-Grady Memorial Hospital,Trauma Private OB,,112,11200501,,,,,,inpatient,3961.65,3961.65,2376.99,3169.32,Multiplan,Commercial,3050.47,percent of total billed charges
-Grady Memorial Hospital,Trauma Private OB,,112,11200501,,,,,,inpatient,3961.65,3961.65,2376.99,3169.32,USP Naphcare,Commercial,2376.99,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private OB,,112,11200502,,,,,,inpatient,4310.25,4310.25,2586.15,3448.2,Anthem BCBS,HPN,3448.2,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private OB,,112,11200502,,,,,,inpatient,4310.25,4310.25,2586.15,3448.2,Kaiser,Commercial,3267.17,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private OB,,112,11200502,,,,,,inpatient,4310.25,4310.25,2586.15,3448.2,Multiplan,Commercial,3318.89,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Private OB,,112,11200502,,,,,,inpatient,4310.25,4310.25,2586.15,3448.2,USP Naphcare,Commercial,2586.15,percent of total billed charges
-Grady Memorial Hospital,Private OB,,112,11200001,,,,,,inpatient,4364.85,4364.85,2618.91,3491.88,Anthem BCBS,HPN,3491.88,percent of total billed charges
-Grady Memorial Hospital,Private OB,,112,11200001,,,,,,inpatient,4364.85,4364.85,2618.91,3491.88,Kaiser,Commercial,3308.56,percent of total billed charges
-Grady Memorial Hospital,Private OB,,112,11200001,,,,,,inpatient,4364.85,4364.85,2618.91,3491.88,Multiplan,Commercial,3360.93,percent of total billed charges
-Grady Memorial Hospital,Private OB,,112,11200001,,,,,,inpatient,4364.85,4364.85,2618.91,3491.88,USP Naphcare,Commercial,2618.91,percent of total billed charges
-Grady Memorial Hospital,Tele Private OB,,112,11200002,,,,,,inpatient,4522.35,4522.35,2713.41,3617.88,Anthem BCBS,HPN,3617.88,percent of total billed charges
-Grady Memorial Hospital,Tele Private OB,,112,11200002,,,,,,inpatient,4522.35,4522.35,2713.41,3617.88,Kaiser,Commercial,3427.94,percent of total billed charges
-Grady Memorial Hospital,Tele Private OB,,112,11200002,,,,,,inpatient,4522.35,4522.35,2713.41,3617.88,Multiplan,Commercial,3482.21,percent of total billed charges
-Grady Memorial Hospital,Tele Private OB,,112,11200002,,,,,,inpatient,4522.35,4522.35,2713.41,3617.88,USP Naphcare,Commercial,2713.41,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Psy,,114,11400502,,,,,,inpatient,3536.4,3536.4,2121.84,2829.12,Anthem BCBS,HPN,2829.12,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Psy,,114,11400502,,,,,,inpatient,3536.4,3536.4,2121.84,2829.12,Kaiser,Commercial,2680.59,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Psy,,114,11400502,,,,,,inpatient,3536.4,3536.4,2121.84,2829.12,Multiplan,Commercial,2723.03,percent of total billed charges
-Grady Memorial Hospital,Trauma Private Psy,,114,11400502,,,,,,inpatient,3536.4,3536.4,2121.84,2829.12,USP Naphcare,Commercial,2121.84,percent of total billed charges
-Grady Memorial Hospital,Private Psy,,114,11400002,,,,,,inpatient,3848.25,3848.25,2308.95,3078.6,Anthem BCBS,HPN,3078.6,percent of total billed charges
-Grady Memorial Hospital,Private Psy,,114,11400002,,,,,,inpatient,3848.25,3848.25,2308.95,3078.6,Kaiser,Commercial,2916.97,percent of total billed charges
-Grady Memorial Hospital,Private Psy,,114,11400002,,,,,,inpatient,3848.25,3848.25,2308.95,3078.6,Multiplan,Commercial,2963.15,percent of total billed charges
-Grady Memorial Hospital,Private Psy,,114,11400002,,,,,,inpatient,3848.25,3848.25,2308.95,3078.6,USP Naphcare,Commercial,2308.95,percent of total billed charges
-Grady Memorial Hospital,Trauma Inpatient Hospice,,115,11500501,,,,,,inpatient,4065.6,4065.6,2439.36,3252.48,Anthem BCBS,HPN,3252.48,percent of total billed charges
-Grady Memorial Hospital,Trauma Inpatient Hospice,,115,11500501,,,,,,inpatient,4065.6,4065.6,2439.36,3252.48,Kaiser,Commercial,3081.72,percent of total billed charges
-Grady Memorial Hospital,Trauma Inpatient Hospice,,115,11500501,,,,,,inpatient,4065.6,4065.6,2439.36,3252.48,Multiplan,Commercial,3130.51,percent of total billed charges
-Grady Memorial Hospital,Trauma Inpatient Hospice,,115,11500501,,,,,,inpatient,4065.6,4065.6,2439.36,3252.48,USP Naphcare,Commercial,2439.36,percent of total billed charges
-Grady Memorial Hospital,Inpatient Hospice,,115,11500001,,,,,,inpatient,4158,4158,2494.8,3326.4,Anthem BCBS,HPN,3326.4,percent of total billed charges
-Grady Memorial Hospital,Inpatient Hospice,,115,11500001,,,,,,inpatient,4158,4158,2494.8,3326.4,Kaiser,Commercial,3151.76,percent of total billed charges
-Grady Memorial Hospital,Inpatient Hospice,,115,11500001,,,,,,inpatient,4158,4158,2494.8,3326.4,Multiplan,Commercial,3201.66,percent of total billed charges
-Grady Memorial Hospital,Inpatient Hospice,,115,11500001,,,,,,inpatient,4158,4158,2494.8,3326.4,USP Naphcare,Commercial,2494.8,percent of total billed charges
-Grady Memorial Hospital,Private Rehab Room,,118,11800001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Anthem BCBS,HPN,3319.68,percent of total billed charges
-Grady Memorial Hospital,Private Rehab Room,,118,11800001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Kaiser,Commercial,3145.4,percent of total billed charges
-Grady Memorial Hospital,Private Rehab Room,,118,11800001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Multiplan,Commercial,3195.19,percent of total billed charges
-Grady Memorial Hospital,Private Rehab Room,,118,11800001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,USP Naphcare,Commercial,2489.76,percent of total billed charges
-Grady Memorial Hospital,Semiprivate Medsurg,,121,12100001,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Anthem BCBS,HPN,2494.8,percent of total billed charges
-Grady Memorial Hospital,Semiprivate Medsurg,,121,12100001,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Kaiser,Commercial,2363.82,percent of total billed charges
-Grady Memorial Hospital,Semiprivate Medsurg,,121,12100001,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Multiplan,Commercial,2401.24,percent of total billed charges
-Grady Memorial Hospital,Semiprivate Medsurg,,121,12100001,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,USP Naphcare,Commercial,1871.1,percent of total billed charges
-Grady Memorial Hospital,Semiprivate Gyn,,121,12100021,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Anthem BCBS,HPN,2494.8,percent of total billed charges
-Grady Memorial Hospital,Semiprivate Gyn,,121,12100021,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Kaiser,Commercial,2363.82,percent of total billed charges
-Grady Memorial Hospital,Semiprivate Gyn,,121,12100021,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Multiplan,Commercial,2401.24,percent of total billed charges
-Grady Memorial Hospital,Semiprivate Gyn,,121,12100021,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,USP Naphcare,Commercial,1871.1,percent of total billed charges
-Grady Memorial Hospital,Trauma Semiprivate Gyn,,121,12100521,,,,,,inpatient,3208.8,3208.8,1925.28,2567.04,Anthem BCBS,HPN,2567.04,percent of total billed charges
-Grady Memorial Hospital,Trauma Semiprivate Gyn,,121,12100521,,,,,,inpatient,3208.8,3208.8,1925.28,2567.04,Kaiser,Commercial,2432.27,percent of total billed charges
-Grady Memorial Hospital,Trauma Semiprivate Gyn,,121,12100521,,,,,,inpatient,3208.8,3208.8,1925.28,2567.04,Multiplan,Commercial,2470.78,percent of total billed charges
-Grady Memorial Hospital,Trauma Semiprivate Gyn,,121,12100521,,,,,,inpatient,3208.8,3208.8,1925.28,2567.04,USP Naphcare,Commercial,1925.28,percent of total billed charges
-Grady Memorial Hospital,Trauma Semiprivate Medsurg,,121,12100501,,,,,,inpatient,3400.95,3400.95,2040.57,2720.76,Anthem BCBS,HPN,2720.76,percent of total billed charges
-Grady Memorial Hospital,Trauma Semiprivate Medsurg,,121,12100501,,,,,,inpatient,3400.95,3400.95,2040.57,2720.76,Kaiser,Commercial,2577.92,percent of total billed charges
-Grady Memorial Hospital,Trauma Semiprivate Medsurg,,121,12100501,,,,,,inpatient,3400.95,3400.95,2040.57,2720.76,Multiplan,Commercial,2618.73,percent of total billed charges
-Grady Memorial Hospital,Trauma Semiprivate Medsurg,,121,12100501,,,,,,inpatient,3400.95,3400.95,2040.57,2720.76,USP Naphcare,Commercial,2040.57,percent of total billed charges
-Grady Memorial Hospital,Tele Semiprivate,,121,12100003,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Anthem BCBS,HPN,2766.96,percent of total billed charges
-Grady Memorial Hospital,Tele Semiprivate,,121,12100003,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Kaiser,Commercial,2621.69,percent of total billed charges
-Grady Memorial Hospital,Tele Semiprivate,,121,12100003,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Multiplan,Commercial,2663.2,percent of total billed charges
-Grady Memorial Hospital,Tele Semiprivate,,121,12100003,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,USP Naphcare,Commercial,2075.22,percent of total billed charges
-Grady Memorial Hospital,Tele Semiprivate Gyn,,121,12100023,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Anthem BCBS,HPN,2766.96,percent of total billed charges
-Grady Memorial Hospital,Tele Semiprivate Gyn,,121,12100023,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Kaiser,Commercial,2621.69,percent of total billed charges
-Grady Memorial Hospital,Tele Semiprivate Gyn,,121,12100023,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Multiplan,Commercial,2663.2,percent of total billed charges
-Grady Memorial Hospital,Tele Semiprivate Gyn,,121,12100023,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,USP Naphcare,Commercial,2075.22,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Semiprivate Gyn,,121,12100523,,,,,,inpatient,3698.1,3698.1,2218.86,2958.48,Anthem BCBS,HPN,2958.48,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Semiprivate Gyn,,121,12100523,,,,,,inpatient,3698.1,3698.1,2218.86,2958.48,Kaiser,Commercial,2803.16,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Semiprivate Gyn,,121,12100523,,,,,,inpatient,3698.1,3698.1,2218.86,2958.48,Multiplan,Commercial,2847.54,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Semiprivate Gyn,,121,12100523,,,,,,inpatient,3698.1,3698.1,2218.86,2958.48,USP Naphcare,Commercial,2218.86,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Semiprivate,,121,12100503,,,,,,inpatient,3919.65,3919.65,2351.79,3135.72,Anthem BCBS,HPN,3135.72,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Semiprivate,,121,12100503,,,,,,inpatient,3919.65,3919.65,2351.79,3135.72,Kaiser,Commercial,2971.09,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Semiprivate,,121,12100503,,,,,,inpatient,3919.65,3919.65,2351.79,3135.72,Multiplan,Commercial,3018.13,percent of total billed charges
-Grady Memorial Hospital,Trauma Tele Semiprivate,,121,12100503,,,,,,inpatient,3919.65,3919.65,2351.79,3135.72,USP Naphcare,Commercial,2351.79,percent of total billed charges
+hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,negotiated_percentage,median_amount,price_type,resolved_price,methodology
+Grady Memorial Hospital,HB Med-Sur-Gy/Pvt,,111,11100001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Anthem BCBS,HPN,3319.68,80,,negotiated_dollar,3319.68,percent of total billed charges
+Grady Memorial Hospital,HB Med-Sur-Gy/Pvt,,111,11100001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Kaiser,Commercial,3145.4,75.8,,negotiated_dollar,3145.4,percent of total billed charges
+Grady Memorial Hospital,HB Med-Sur-Gy/Pvt,,111,11100001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Multiplan,Commercial,3195.19,77,,negotiated_dollar,3195.19,percent of total billed charges
+Grady Memorial Hospital,HB Med-Sur-Gy/Pvt,,111,11100001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,USP Naphcare,Commercial,2489.76,60,,negotiated_dollar,2489.76,percent of total billed charges
+Grady Memorial Hospital,HB Pvt Gyn,,111,11100021,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Anthem BCBS,HPN,3319.68,80,,negotiated_dollar,3319.68,percent of total billed charges
+Grady Memorial Hospital,HB Pvt Gyn,,111,11100021,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Kaiser,Commercial,3145.4,75.8,,negotiated_dollar,3145.4,percent of total billed charges
+Grady Memorial Hospital,HB Pvt Gyn,,111,11100021,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Multiplan,Commercial,3195.19,77,,negotiated_dollar,3195.19,percent of total billed charges
+Grady Memorial Hospital,HB Pvt Gyn,,111,11100021,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,USP Naphcare,Commercial,2489.76,60,,negotiated_dollar,2489.76,percent of total billed charges
+Grady Memorial Hospital,Tele Private Gyn,,111,11100023,,,,,,inpatient,4323.9,4323.9,2594.34,3459.12,Anthem BCBS,HPN,3459.12,80,,negotiated_dollar,3459.12,percent of total billed charges
+Grady Memorial Hospital,Tele Private Gyn,,111,11100023,,,,,,inpatient,4323.9,4323.9,2594.34,3459.12,Kaiser,Commercial,3277.52,75.8,,negotiated_dollar,3277.52,percent of total billed charges
+Grady Memorial Hospital,Tele Private Gyn,,111,11100023,,,,,,inpatient,4323.9,4323.9,2594.34,3459.12,Multiplan,Commercial,3329.4,77,,negotiated_dollar,3329.4,percent of total billed charges
+Grady Memorial Hospital,Tele Private Gyn,,111,11100023,,,,,,inpatient,4323.9,4323.9,2594.34,3459.12,USP Naphcare,Commercial,2594.34,60,,negotiated_dollar,2594.34,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Med Surg,,111,11100501,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Anthem BCBS,HPN,3479.28,80,,negotiated_dollar,3479.28,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Med Surg,,111,11100501,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Kaiser,Commercial,3296.62,75.8,,negotiated_dollar,3296.62,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Med Surg,,111,11100501,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Multiplan,Commercial,3348.81,77,,negotiated_dollar,3348.81,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Med Surg,,111,11100501,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,USP Naphcare,Commercial,2609.46,60,,negotiated_dollar,2609.46,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Gyn,,111,11100521,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Anthem BCBS,HPN,3479.28,80,,negotiated_dollar,3479.28,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Gyn,,111,11100521,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Kaiser,Commercial,3296.62,75.8,,negotiated_dollar,3296.62,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Gyn,,111,11100521,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,Multiplan,Commercial,3348.81,77,,negotiated_dollar,3348.81,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Gyn,,111,11100521,,,,,,inpatient,4349.1,4349.1,2609.46,3479.28,USP Naphcare,Commercial,2609.46,60,,negotiated_dollar,2609.46,percent of total billed charges
+Grady Memorial Hospital,Tele Private Med Surg,,111,11100003,,,,,,inpatient,4583.25,4583.25,2749.95,3666.6,Anthem BCBS,HPN,3666.6,80,,negotiated_dollar,3666.6,percent of total billed charges
+Grady Memorial Hospital,Tele Private Med Surg,,111,11100003,,,,,,inpatient,4583.25,4583.25,2749.95,3666.6,Kaiser,Commercial,3474.1,75.8,,negotiated_dollar,3474.1,percent of total billed charges
+Grady Memorial Hospital,Tele Private Med Surg,,111,11100003,,,,,,inpatient,4583.25,4583.25,2749.95,3666.6,Multiplan,Commercial,3529.1,77,,negotiated_dollar,3529.1,percent of total billed charges
+Grady Memorial Hospital,Tele Private Med Surg,,111,11100003,,,,,,inpatient,4583.25,4583.25,2749.95,3666.6,USP Naphcare,Commercial,2749.95,60,,negotiated_dollar,2749.95,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private Med Surg,,111,11100503,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Anthem BCBS,HPN,3806.88,80,,negotiated_dollar,3806.88,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private Med Surg,,111,11100503,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Kaiser,Commercial,3607.02,75.8,,negotiated_dollar,3607.02,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private Med Surg,,111,11100503,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Multiplan,Commercial,3664.12,77,,negotiated_dollar,3664.12,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private Med Surg,,111,11100503,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,USP Naphcare,Commercial,2855.16,60,,negotiated_dollar,2855.16,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private Gyn,,111,11100523,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Anthem BCBS,HPN,3806.88,80,,negotiated_dollar,3806.88,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private Gyn,,111,11100523,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Kaiser,Commercial,3607.02,75.8,,negotiated_dollar,3607.02,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private Gyn,,111,11100523,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,Multiplan,Commercial,3664.12,77,,negotiated_dollar,3664.12,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private Gyn,,111,11100523,,,,,,inpatient,4758.6,4758.6,2855.16,3806.88,USP Naphcare,Commercial,2855.16,60,,negotiated_dollar,2855.16,percent of total billed charges
+Grady Memorial Hospital,Trauma Private OB,,112,11200501,,,,,,inpatient,3961.65,3961.65,2376.99,3169.32,Anthem BCBS,HPN,3169.32,80,,negotiated_dollar,3169.32,percent of total billed charges
+Grady Memorial Hospital,Trauma Private OB,,112,11200501,,,,,,inpatient,3961.65,3961.65,2376.99,3169.32,Kaiser,Commercial,3002.93,75.8,,negotiated_dollar,3002.93,percent of total billed charges
+Grady Memorial Hospital,Trauma Private OB,,112,11200501,,,,,,inpatient,3961.65,3961.65,2376.99,3169.32,Multiplan,Commercial,3050.47,77,,negotiated_dollar,3050.47,percent of total billed charges
+Grady Memorial Hospital,Trauma Private OB,,112,11200501,,,,,,inpatient,3961.65,3961.65,2376.99,3169.32,USP Naphcare,Commercial,2376.99,60,,negotiated_dollar,2376.99,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private OB,,112,11200502,,,,,,inpatient,4310.25,4310.25,2586.15,3448.2,Anthem BCBS,HPN,3448.2,80,,negotiated_dollar,3448.2,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private OB,,112,11200502,,,,,,inpatient,4310.25,4310.25,2586.15,3448.2,Kaiser,Commercial,3267.17,75.8,,negotiated_dollar,3267.17,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private OB,,112,11200502,,,,,,inpatient,4310.25,4310.25,2586.15,3448.2,Multiplan,Commercial,3318.89,77,,negotiated_dollar,3318.89,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Private OB,,112,11200502,,,,,,inpatient,4310.25,4310.25,2586.15,3448.2,USP Naphcare,Commercial,2586.15,60,,negotiated_dollar,2586.15,percent of total billed charges
+Grady Memorial Hospital,Private OB,,112,11200001,,,,,,inpatient,4364.85,4364.85,2618.91,3491.88,Anthem BCBS,HPN,3491.88,80,,negotiated_dollar,3491.88,percent of total billed charges
+Grady Memorial Hospital,Private OB,,112,11200001,,,,,,inpatient,4364.85,4364.85,2618.91,3491.88,Kaiser,Commercial,3308.56,75.8,,negotiated_dollar,3308.56,percent of total billed charges
+Grady Memorial Hospital,Private OB,,112,11200001,,,,,,inpatient,4364.85,4364.85,2618.91,3491.88,Multiplan,Commercial,3360.93,77,,negotiated_dollar,3360.93,percent of total billed charges
+Grady Memorial Hospital,Private OB,,112,11200001,,,,,,inpatient,4364.85,4364.85,2618.91,3491.88,USP Naphcare,Commercial,2618.91,60,,negotiated_dollar,2618.91,percent of total billed charges
+Grady Memorial Hospital,Tele Private OB,,112,11200002,,,,,,inpatient,4522.35,4522.35,2713.41,3617.88,Anthem BCBS,HPN,3617.88,80,,negotiated_dollar,3617.88,percent of total billed charges
+Grady Memorial Hospital,Tele Private OB,,112,11200002,,,,,,inpatient,4522.35,4522.35,2713.41,3617.88,Kaiser,Commercial,3427.94,75.8,,negotiated_dollar,3427.94,percent of total billed charges
+Grady Memorial Hospital,Tele Private OB,,112,11200002,,,,,,inpatient,4522.35,4522.35,2713.41,3617.88,Multiplan,Commercial,3482.21,77,,negotiated_dollar,3482.21,percent of total billed charges
+Grady Memorial Hospital,Tele Private OB,,112,11200002,,,,,,inpatient,4522.35,4522.35,2713.41,3617.88,USP Naphcare,Commercial,2713.41,60,,negotiated_dollar,2713.41,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Psy,,114,11400502,,,,,,inpatient,3536.4,3536.4,2121.84,2829.12,Anthem BCBS,HPN,2829.12,80,,negotiated_dollar,2829.12,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Psy,,114,11400502,,,,,,inpatient,3536.4,3536.4,2121.84,2829.12,Kaiser,Commercial,2680.59,75.8,,negotiated_dollar,2680.59,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Psy,,114,11400502,,,,,,inpatient,3536.4,3536.4,2121.84,2829.12,Multiplan,Commercial,2723.03,77,,negotiated_dollar,2723.03,percent of total billed charges
+Grady Memorial Hospital,Trauma Private Psy,,114,11400502,,,,,,inpatient,3536.4,3536.4,2121.84,2829.12,USP Naphcare,Commercial,2121.84,60,,negotiated_dollar,2121.84,percent of total billed charges
+Grady Memorial Hospital,Private Psy,,114,11400002,,,,,,inpatient,3848.25,3848.25,2308.95,3078.6,Anthem BCBS,HPN,3078.6,80,,negotiated_dollar,3078.6,percent of total billed charges
+Grady Memorial Hospital,Private Psy,,114,11400002,,,,,,inpatient,3848.25,3848.25,2308.95,3078.6,Kaiser,Commercial,2916.97,75.8,,negotiated_dollar,2916.97,percent of total billed charges
+Grady Memorial Hospital,Private Psy,,114,11400002,,,,,,inpatient,3848.25,3848.25,2308.95,3078.6,Multiplan,Commercial,2963.15,77,,negotiated_dollar,2963.15,percent of total billed charges
+Grady Memorial Hospital,Private Psy,,114,11400002,,,,,,inpatient,3848.25,3848.25,2308.95,3078.6,USP Naphcare,Commercial,2308.95,60,,negotiated_dollar,2308.95,percent of total billed charges
+Grady Memorial Hospital,Trauma Inpatient Hospice,,115,11500501,,,,,,inpatient,4065.6,4065.6,2439.36,3252.48,Anthem BCBS,HPN,3252.48,80,,negotiated_dollar,3252.48,percent of total billed charges
+Grady Memorial Hospital,Trauma Inpatient Hospice,,115,11500501,,,,,,inpatient,4065.6,4065.6,2439.36,3252.48,Kaiser,Commercial,3081.72,75.8,,negotiated_dollar,3081.72,percent of total billed charges
+Grady Memorial Hospital,Trauma Inpatient Hospice,,115,11500501,,,,,,inpatient,4065.6,4065.6,2439.36,3252.48,Multiplan,Commercial,3130.51,77,,negotiated_dollar,3130.51,percent of total billed charges
+Grady Memorial Hospital,Trauma Inpatient Hospice,,115,11500501,,,,,,inpatient,4065.6,4065.6,2439.36,3252.48,USP Naphcare,Commercial,2439.36,60,,negotiated_dollar,2439.36,percent of total billed charges
+Grady Memorial Hospital,Inpatient Hospice,,115,11500001,,,,,,inpatient,4158,4158,2494.8,3326.4,Anthem BCBS,HPN,3326.4,80,,negotiated_dollar,3326.4,percent of total billed charges
+Grady Memorial Hospital,Inpatient Hospice,,115,11500001,,,,,,inpatient,4158,4158,2494.8,3326.4,Kaiser,Commercial,3151.76,75.8,,negotiated_dollar,3151.76,percent of total billed charges
+Grady Memorial Hospital,Inpatient Hospice,,115,11500001,,,,,,inpatient,4158,4158,2494.8,3326.4,Multiplan,Commercial,3201.66,77,,negotiated_dollar,3201.66,percent of total billed charges
+Grady Memorial Hospital,Inpatient Hospice,,115,11500001,,,,,,inpatient,4158,4158,2494.8,3326.4,USP Naphcare,Commercial,2494.8,60,,negotiated_dollar,2494.8,percent of total billed charges
+Grady Memorial Hospital,Private Rehab Room,,118,11800001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Anthem BCBS,HPN,3319.68,80,,negotiated_dollar,3319.68,percent of total billed charges
+Grady Memorial Hospital,Private Rehab Room,,118,11800001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Kaiser,Commercial,3145.4,75.8,,negotiated_dollar,3145.4,percent of total billed charges
+Grady Memorial Hospital,Private Rehab Room,,118,11800001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,Multiplan,Commercial,3195.19,77,,negotiated_dollar,3195.19,percent of total billed charges
+Grady Memorial Hospital,Private Rehab Room,,118,11800001,,,,,,inpatient,4149.6,4149.6,2489.76,3319.68,USP Naphcare,Commercial,2489.76,60,,negotiated_dollar,2489.76,percent of total billed charges
+Grady Memorial Hospital,Semiprivate Medsurg,,121,12100001,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Anthem BCBS,HPN,2494.8,80,,negotiated_dollar,2494.8,percent of total billed charges
+Grady Memorial Hospital,Semiprivate Medsurg,,121,12100001,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Kaiser,Commercial,2363.82,75.8,,negotiated_dollar,2363.82,percent of total billed charges
+Grady Memorial Hospital,Semiprivate Medsurg,,121,12100001,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Multiplan,Commercial,2401.24,77,,negotiated_dollar,2401.24,percent of total billed charges
+Grady Memorial Hospital,Semiprivate Medsurg,,121,12100001,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,USP Naphcare,Commercial,1871.1,60,,negotiated_dollar,1871.1,percent of total billed charges
+Grady Memorial Hospital,Semiprivate Gyn,,121,12100021,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Anthem BCBS,HPN,2494.8,80,,negotiated_dollar,2494.8,percent of total billed charges
+Grady Memorial Hospital,Semiprivate Gyn,,121,12100021,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Kaiser,Commercial,2363.82,75.8,,negotiated_dollar,2363.82,percent of total billed charges
+Grady Memorial Hospital,Semiprivate Gyn,,121,12100021,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,Multiplan,Commercial,2401.24,77,,negotiated_dollar,2401.24,percent of total billed charges
+Grady Memorial Hospital,Semiprivate Gyn,,121,12100021,,,,,,inpatient,3118.5,3118.5,1871.1,2494.8,USP Naphcare,Commercial,1871.1,60,,negotiated_dollar,1871.1,percent of total billed charges
+Grady Memorial Hospital,Trauma Semiprivate Gyn,,121,12100521,,,,,,inpatient,3208.8,3208.8,1925.28,2567.04,Anthem BCBS,HPN,2567.04,80,,negotiated_dollar,2567.04,percent of total billed charges
+Grady Memorial Hospital,Trauma Semiprivate Gyn,,121,12100521,,,,,,inpatient,3208.8,3208.8,1925.28,2567.04,Kaiser,Commercial,2432.27,75.8,,negotiated_dollar,2432.27,percent of total billed charges
+Grady Memorial Hospital,Trauma Semiprivate Gyn,,121,12100521,,,,,,inpatient,3208.8,3208.8,1925.28,2567.04,Multiplan,Commercial,2470.78,77,,negotiated_dollar,2470.78,percent of total billed charges
+Grady Memorial Hospital,Trauma Semiprivate Gyn,,121,12100521,,,,,,inpatient,3208.8,3208.8,1925.28,2567.04,USP Naphcare,Commercial,1925.28,60,,negotiated_dollar,1925.28,percent of total billed charges
+Grady Memorial Hospital,Trauma Semiprivate Medsurg,,121,12100501,,,,,,inpatient,3400.95,3400.95,2040.57,2720.76,Anthem BCBS,HPN,2720.76,80,,negotiated_dollar,2720.76,percent of total billed charges
+Grady Memorial Hospital,Trauma Semiprivate Medsurg,,121,12100501,,,,,,inpatient,3400.95,3400.95,2040.57,2720.76,Kaiser,Commercial,2577.92,75.8,,negotiated_dollar,2577.92,percent of total billed charges
+Grady Memorial Hospital,Trauma Semiprivate Medsurg,,121,12100501,,,,,,inpatient,3400.95,3400.95,2040.57,2720.76,Multiplan,Commercial,2618.73,77,,negotiated_dollar,2618.73,percent of total billed charges
+Grady Memorial Hospital,Trauma Semiprivate Medsurg,,121,12100501,,,,,,inpatient,3400.95,3400.95,2040.57,2720.76,USP Naphcare,Commercial,2040.57,60,,negotiated_dollar,2040.57,percent of total billed charges
+Grady Memorial Hospital,Tele Semiprivate,,121,12100003,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Anthem BCBS,HPN,2766.96,80,,negotiated_dollar,2766.96,percent of total billed charges
+Grady Memorial Hospital,Tele Semiprivate,,121,12100003,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Kaiser,Commercial,2621.69,75.8,,negotiated_dollar,2621.69,percent of total billed charges
+Grady Memorial Hospital,Tele Semiprivate,,121,12100003,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Multiplan,Commercial,2663.2,77,,negotiated_dollar,2663.2,percent of total billed charges
+Grady Memorial Hospital,Tele Semiprivate,,121,12100003,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,USP Naphcare,Commercial,2075.22,60,,negotiated_dollar,2075.22,percent of total billed charges
+Grady Memorial Hospital,Tele Semiprivate Gyn,,121,12100023,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Anthem BCBS,HPN,2766.96,80,,negotiated_dollar,2766.96,percent of total billed charges
+Grady Memorial Hospital,Tele Semiprivate Gyn,,121,12100023,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Kaiser,Commercial,2621.69,75.8,,negotiated_dollar,2621.69,percent of total billed charges
+Grady Memorial Hospital,Tele Semiprivate Gyn,,121,12100023,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,Multiplan,Commercial,2663.2,77,,negotiated_dollar,2663.2,percent of total billed charges
+Grady Memorial Hospital,Tele Semiprivate Gyn,,121,12100023,,,,,,inpatient,3458.7,3458.7,2075.22,2766.96,USP Naphcare,Commercial,2075.22,60,,negotiated_dollar,2075.22,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Semiprivate Gyn,,121,12100523,,,,,,inpatient,3698.1,3698.1,2218.86,2958.48,Anthem BCBS,HPN,2958.48,80,,negotiated_dollar,2958.48,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Semiprivate Gyn,,121,12100523,,,,,,inpatient,3698.1,3698.1,2218.86,2958.48,Kaiser,Commercial,2803.16,75.8,,negotiated_dollar,2803.16,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Semiprivate Gyn,,121,12100523,,,,,,inpatient,3698.1,3698.1,2218.86,2958.48,Multiplan,Commercial,2847.54,77,,negotiated_dollar,2847.54,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Semiprivate Gyn,,121,12100523,,,,,,inpatient,3698.1,3698.1,2218.86,2958.48,USP Naphcare,Commercial,2218.86,60,,negotiated_dollar,2218.86,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Semiprivate,,121,12100503,,,,,,inpatient,3919.65,3919.65,2351.79,3135.72,Anthem BCBS,HPN,3135.72,80,,negotiated_dollar,3135.72,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Semiprivate,,121,12100503,,,,,,inpatient,3919.65,3919.65,2351.79,3135.72,Kaiser,Commercial,2971.09,75.8,,negotiated_dollar,2971.09,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Semiprivate,,121,12100503,,,,,,inpatient,3919.65,3919.65,2351.79,3135.72,Multiplan,Commercial,3018.13,77,,negotiated_dollar,3018.13,percent of total billed charges
+Grady Memorial Hospital,Trauma Tele Semiprivate,,121,12100503,,,,,,inpatient,3919.65,3919.65,2351.79,3135.72,USP Naphcare,Commercial,2351.79,60,,negotiated_dollar,2351.79,percent of total billed charges

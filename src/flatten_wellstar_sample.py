@@ -1,23 +1,24 @@
 """
-Flatten the small Piedmont sample CSV into the unified column schema
-shared across all hospitals in this project.
+Flatten the small Wellstar Kennestone sample CSV into the unified column
+schema shared across all hospitals in this project.
 
-UPDATE: same price resolution logic added as in flatten_emory_sample.py.
-See that file's docstring for the full explanation. Piedmont's sample
-mostly has clean negotiated_dollar values already, so most rows here
-should resolve as price_type = "negotiated_dollar" without needing the
-percentage or median fallback -- a useful contrast against Emory/Grady/
-Wellstar once you compare price_type breakdowns across hospitals.
+UPDATE: same price resolution logic as flatten_emory_sample.py. This is
+the hospital where the fallback logic matters most -- our second sample
+showed heavy use of algorithm-based fee schedules, but with
+median_amount / percentile fields populated even when negotiated_dollar
+was blank. Expect a meaningful share of rows to resolve as
+price_type = "median_estimate" here, in contrast to Piedmont's mostly
+"negotiated_dollar" rows.
 """
 
 import csv
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-INPUT_FILE = PROJECT_ROOT / "data" / "sample" / "piedmont_sample.csv"
-OUTPUT_FILE = PROJECT_ROOT / "data" / "processed" / "piedmont_sample_flat.csv"
+INPUT_FILE = PROJECT_ROOT / "data" / "sample" / "wellstar_sample.csv"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "processed" / "wellstar_sample_flat.csv"
 
-HOSPITAL_NAME = "Piedmont Atlanta Hospital"
+HOSPITAL_NAME = "Wellstar Kennestone Hospital"
 
 OUTPUT_COLUMNS = [
     "hospital_name",
