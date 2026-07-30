@@ -1,1 +1,12 @@
 hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,billing_class,modifiers,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,negotiated_percentage,median_amount,price_type,resolved_price,methodology
+Emory University Hospital,"Hc Cardiac Stress Tst,Tracing Only",,482,4829301701,93017,,,,,facility,,both,1034,1034,,,,,,,,unavailable,,
+Emory University Hospital,"Hc Cardiac Stress Tst,Tracing Only - Stress Test Only, Exercise",,482,4829301702,93017,,,,,facility,,both,1034,1034,,,,,,,,unavailable,,
+Emory University Hospital,"Hc Cardiovascular Stress Test - Stress Test Only, Dobutamine",,482,4829301704,93017,,,,,facility,,both,1034,1034,,,,,,,,unavailable,,
+Emory University Hospital,Hc Ekg Stress Test Lexiscan,,302,4829301752,93017,,,,,facility,,both,1034,1034,,,,,,,,unavailable,,
+Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Aetna,Medicare Managed Care Plan,220.91,,,negotiated_dollar,220.91,fee schedule
+Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Ambetter Health,Peach State Exchange,459.14,,,negotiated_dollar,459.14,fee schedule
+Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Bcbs,Blue Value Secure Medicare Managed Care Plan,218.74,,,negotiated_dollar,218.74,fee schedule
+Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Cigna,Healthspring Medicare Managed Care Plan,223.07,,,negotiated_dollar,223.07,fee schedule
+Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Clover Health,Medicare Managed Care Plan,227.41,,,negotiated_dollar,227.41,fee schedule
+Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Devoted Health,Medicare Managed Care Plan,216.58,,,negotiated_dollar,216.58,fee schedule
+Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Wellcare,Medicare Managed Care Plan,229.57,,,negotiated_dollar,229.57,fee schedule

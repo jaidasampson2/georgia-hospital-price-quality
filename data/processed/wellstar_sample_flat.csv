@@ -1,1 +1,20 @@
 hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,billing_class,modifiers,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,negotiated_percentage,median_amount,price_type,resolved_price,methodology
+Wellstar Kennestone Hospital,Hc Pet Cv Stress Test,,482,70900026,93017,,,,,facility,,both,3270,1275.3,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Hc Pet Cv Stress Test,,482,70900026,93017,,,,,facility,,both,1325,516.75,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Hc Pet Cv Stress Test,,482,70900026,93017,,,,,facility,,both,3270,1275.3,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Hc Cardiovascular Stress Test,,482,93010045,93017,,,,,facility,,both,1325,516.75,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Hc Cardiovascular Stress Test,,482,93010045,93017,,,,,facility,,both,3270,1275.3,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Hc Cardiovascular Stress Test,,482,93010045,93017,,,,,facility,,both,150,58.5,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Hc Cardiovascular Stress Test,,482,93010045,93017,,,,,facility,,both,3270,1275.3,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Hc Nm Cv Stress Test,,482,93010180,93017,,,,,facility,,both,3270,1275.3,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Hc Nm Cv Stress Test,,482,93010180,93017,,,,,facility,,both,1325,516.75,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Hc Nm Cv Stress Test,,482,93010180,93017,,,,,facility,,both,3270,1275.3,,,,,,,,unavailable,,
+Wellstar Kennestone Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,219.32,823.3,Bcbs,Hmo/Pos,823.3,,,negotiated_dollar,823.3,fee schedule
+Wellstar Kennestone Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,219.32,823.3,Bcbs,Shbp Other Commercial Plan,649.83,,,negotiated_dollar,649.83,fee schedule
+Wellstar Kennestone Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,219.32,823.3,Aetna,Medicare Managed Care Plan,219.32,,,negotiated_dollar,219.32,fee schedule
+Wellstar Kennestone Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,219.32,823.3,Ambetter,Select Exchange,386,,,negotiated_dollar,386,fee schedule
+Wellstar Kennestone Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,219.32,823.3,Bcbs,Medicare Managed Care Plan,223.7,,,negotiated_dollar,223.7,fee schedule
+Wellstar Kennestone Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,219.32,823.3,Caresource,Exchange,429.86,,,negotiated_dollar,429.86,fee schedule
+Wellstar Kennestone Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,219.32,823.3,Caresource,Medicare Managed Care Plan,234.67,,,negotiated_dollar,234.67,fee schedule
+Wellstar Kennestone Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,219.32,823.3,Cigna,Medicare Managed Care Plan,230.28,,,negotiated_dollar,230.28,fee schedule
+Wellstar Kennestone Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,219.32,823.3,Oscar Healthplan,Exchange,405.73,,,negotiated_dollar,405.73,fee schedule
