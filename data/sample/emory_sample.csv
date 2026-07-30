@@ -1,12 +1,22 @@
 "description","code|1","code|1|type","code|2","code|2|type","code|3","code|3|type","code|4","code|4|type","billing_class","setting","drug_unit_of_measurement","drug_type_of_measurement","modifiers","standard_charge|gross","standard_charge|discounted_cash","payer_name","plan_name","standard_charge|negotiated_dollar","standard_charge|negotiated_percentage","standard_charge|negotiated_algorithm","median_amount","10th_percentile","90th_percentile","count","standard_charge|methodology","standard_charge|min","standard_charge|max","additional_generic_notes"
-"Hc Cardiac Stress Tst,Tracing Only","4829301701","CDM","482","RC","93017","HCPCS",,,"facility","both",,,,"1034","1034",,,,,,,,,,,,,
-"Hc Cardiac Stress Tst,Tracing Only - Stress Test Only, Exercise","4829301702","CDM","482","RC","93017","HCPCS",,,"facility","both",,,,"1034","1034",,,,,,,,,,,,,
-"Hc Cardiovascular Stress Test - Stress Test Only, Dobutamine","4829301704","CDM","482","RC","93017","HCPCS",,,"facility","both",,,,"1034","1034",,,,,,,,,,,,,
-"Hc Ekg Stress Test Lexiscan","4829301752","CDM","302","RC","93017","HCPCS",,,"facility","both",,,,"1034","1034",,,,,,,,,,,,,
-"Cardiovascular stress test","93017","HCPCS",,,,,,,"facility","outpatient",,,,,,"Aetna","Medicare Managed Care Plan","220.91",,,,,,,"fee schedule","216.58","459.14","APC"
-"Cardiovascular stress test","93017","HCPCS",,,,,,,"facility","outpatient",,,,,,"Ambetter Health","Peach State Exchange","459.14",,,,,,,"fee schedule","216.58","459.14","APC"
-"Cardiovascular stress test","93017","HCPCS",,,,,,,"facility","outpatient",,,,,,"Bcbs","Blue Value Secure Medicare Managed Care Plan","218.74",,,,,,,"fee schedule","216.58","459.14","APC"
-"Cardiovascular stress test","93017","HCPCS",,,,,,,"facility","outpatient",,,,,,"Cigna","Healthspring Medicare Managed Care Plan","223.07",,,,,,,"fee schedule","216.58","459.14","APC"
-"Cardiovascular stress test","93017","HCPCS",,,,,,,"facility","outpatient",,,,,,"Clover Health","Medicare Managed Care Plan","227.41",,,,,,,"fee schedule","216.58","459.14","APC"
-"Cardiovascular stress test","93017","HCPCS",,,,,,,"facility","outpatient",,,,,,"Devoted Health","Medicare Managed Care Plan","216.58",,,,,,,"fee schedule","216.58","459.14","APC"
-"Cardiovascular stress test","93017","HCPCS",,,,,,,"facility","outpatient",,,,,,"Wellcare","Medicare Managed Care Plan","229.57",,,,,,,"fee schedule","216.58","459.14","APC"
+"Hc Colonoscopy W/Biopsy Single/Multiple - Colonoscopy","4904538001","CDM","490","RC","45380","HCPCS",,,"facility","both",,,,"3992","3992",,,,,,,,,,,,,
+"Hc Colonoscopy W/Biopsy Single/Multiple - Colonoscopy","7504538001","CDM","750","RC","45380","HCPCS",,,"facility","both",,,,"3472","3472",,,,,,,,,,,,,
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Aetna","Exchange","3295",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Aetna","Hpn Whole Health Other Commercial Plan","3826",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Bcbs","Blue Pathways Exchange","3011.79",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Bcbs","Hmo","5051.48",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Bcbs","Hpn Other Commercial Plan","4454.79",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Cigna","Hmo/Pos","4797",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Humana","Hmo/Pos","5345.54",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Humana","Medicare Managed Care Plan","5345.54",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Kaiser","Hmo","3051",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Oscar Health","Exchange","4249",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Unitedhealthcare","Hmo/Pos","3425",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Unitedhealthcare","Core/Charter/Nexus Other Commercial Plan","2912",,,,,,,"fee schedule","1200.26","5345.54",
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Aetna","Medicare Managed Care Plan","1224.27",,,,,,,"fee schedule","1200.26","5345.54","APC"
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Ambetter Health","Peach State Exchange","2544.55",,,,,,,"fee schedule","1200.26","5345.54","APC"
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Bcbs","Blue Value Secure Medicare Managed Care Plan","1212.26",,,,,,,"fee schedule","1200.26","5345.54","APC"
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Cigna","Healthspring Medicare Managed Care Plan","1236.27",,,,,,,"fee schedule","1200.26","5345.54","APC"
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Clover Health","Medicare Managed Care Plan","1260.27",,,,,,,"fee schedule","1200.26","5345.54","APC"
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Devoted Health","Medicare Managed Care Plan","1200.26",,,,,,,"fee schedule","1200.26","5345.54","APC"
+"Colonoscopy and biopsy","45380","HCPCS",,,,,,,"facility","outpatient",,,,,,"Wellcare","Medicare Managed Care Plan","1272.28",,,,,,,"fee schedule","1200.26","5345.54","APC"

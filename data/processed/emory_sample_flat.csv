@@ -1,12 +1,22 @@
 hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,billing_class,modifiers,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,negotiated_percentage,median_amount,price_type,resolved_price,methodology
-Emory University Hospital,"Hc Cardiac Stress Tst,Tracing Only",,482,4829301701,93017,,,,,facility,,both,1034,1034,,,,,,,,unavailable,,
-Emory University Hospital,"Hc Cardiac Stress Tst,Tracing Only - Stress Test Only, Exercise",,482,4829301702,93017,,,,,facility,,both,1034,1034,,,,,,,,unavailable,,
-Emory University Hospital,"Hc Cardiovascular Stress Test - Stress Test Only, Dobutamine",,482,4829301704,93017,,,,,facility,,both,1034,1034,,,,,,,,unavailable,,
-Emory University Hospital,Hc Ekg Stress Test Lexiscan,,302,4829301752,93017,,,,,facility,,both,1034,1034,,,,,,,,unavailable,,
-Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Aetna,Medicare Managed Care Plan,220.91,,,negotiated_dollar,220.91,fee schedule
-Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Ambetter Health,Peach State Exchange,459.14,,,negotiated_dollar,459.14,fee schedule
-Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Bcbs,Blue Value Secure Medicare Managed Care Plan,218.74,,,negotiated_dollar,218.74,fee schedule
-Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Cigna,Healthspring Medicare Managed Care Plan,223.07,,,negotiated_dollar,223.07,fee schedule
-Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Clover Health,Medicare Managed Care Plan,227.41,,,negotiated_dollar,227.41,fee schedule
-Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Devoted Health,Medicare Managed Care Plan,216.58,,,negotiated_dollar,216.58,fee schedule
-Emory University Hospital,Cardiovascular stress test,,,,93017,,,,,facility,,outpatient,,,216.58,459.14,Wellcare,Medicare Managed Care Plan,229.57,,,negotiated_dollar,229.57,fee schedule
+Emory University Hospital,Hc Colonoscopy W/Biopsy Single/Multiple - Colonoscopy,,490,4904538001,45380,,,,,facility,,both,3992,3992,,,,,,,,unavailable,,
+Emory University Hospital,Hc Colonoscopy W/Biopsy Single/Multiple - Colonoscopy,,750,7504538001,45380,,,,,facility,,both,3472,3472,,,,,,,,unavailable,,
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Aetna,Exchange,3295,,,negotiated_dollar,3295,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Aetna,Hpn Whole Health Other Commercial Plan,3826,,,negotiated_dollar,3826,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Bcbs,Blue Pathways Exchange,3011.79,,,negotiated_dollar,3011.79,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Bcbs,Hmo,5051.48,,,negotiated_dollar,5051.48,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Bcbs,Hpn Other Commercial Plan,4454.79,,,negotiated_dollar,4454.79,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Cigna,Hmo/Pos,4797,,,negotiated_dollar,4797,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Humana,Hmo/Pos,5345.54,,,negotiated_dollar,5345.54,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Humana,Medicare Managed Care Plan,5345.54,,,negotiated_dollar,5345.54,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Kaiser,Hmo,3051,,,negotiated_dollar,3051,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Oscar Health,Exchange,4249,,,negotiated_dollar,4249,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Unitedhealthcare,Hmo/Pos,3425,,,negotiated_dollar,3425,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Unitedhealthcare,Core/Charter/Nexus Other Commercial Plan,2912,,,negotiated_dollar,2912,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Aetna,Medicare Managed Care Plan,1224.27,,,negotiated_dollar,1224.27,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Ambetter Health,Peach State Exchange,2544.55,,,negotiated_dollar,2544.55,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Bcbs,Blue Value Secure Medicare Managed Care Plan,1212.26,,,negotiated_dollar,1212.26,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Cigna,Healthspring Medicare Managed Care Plan,1236.27,,,negotiated_dollar,1236.27,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Clover Health,Medicare Managed Care Plan,1260.27,,,negotiated_dollar,1260.27,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Devoted Health,Medicare Managed Care Plan,1200.26,,,negotiated_dollar,1200.26,fee schedule
+Emory University Hospital,Colonoscopy and biopsy,,,,45380,,,,,facility,,outpatient,,,1200.26,5345.54,Wellcare,Medicare Managed Care Plan,1272.28,,,negotiated_dollar,1272.28,fee schedule

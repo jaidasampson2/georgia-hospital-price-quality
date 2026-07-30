@@ -1,123 +1,65 @@
 hospital_name,description,ndc_code,revenue_code,cdm_code,hcpcs_code,cpt_code,drg_code,drug_unit,drug_unit_type,billing_class,modifiers,setting,gross_charge,discounted_cash,minimum_charge,maximum_charge,payer_name,plan_name,negotiated_price,negotiated_percentage,median_amount,price_type,resolved_price,methodology
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,inpatient,3585,3585,2151,2868,Anthem BCBS,HPN,2868,80,,negotiated_dollar,2868,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,inpatient,3585,3585,2151,2868,Kaiser,Commercial,2717.43,75.8,,negotiated_dollar,2717.43,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,inpatient,3585,3585,2151,2868,Multiplan,Commercial,2760.45,77,,negotiated_dollar,2760.45,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,inpatient,3585,3585,2151,2868,USP Naphcare,Commercial,2151,60,,negotiated_dollar,2151,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,inpatient,3585,3585,2151,2868,Anthem BCBS,HPN,2868,80,,negotiated_dollar,2868,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,inpatient,3585,3585,2151,2868,Kaiser,Commercial,2717.43,75.8,,negotiated_dollar,2717.43,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,inpatient,3585,3585,2151,2868,Multiplan,Commercial,2760.45,77,,negotiated_dollar,2760.45,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,inpatient,3585,3585,2151,2868,USP Naphcare,Commercial,2151,60,,negotiated_dollar,2151,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,inpatient,3585,3585,2151,2868,Anthem BCBS,HPN,2868,80,,negotiated_dollar,2868,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,inpatient,3585,3585,2151,2868,Kaiser,Commercial,2717.43,75.8,,negotiated_dollar,2717.43,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,inpatient,3585,3585,2151,2868,Multiplan,Commercial,2760.45,77,,negotiated_dollar,2760.45,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,inpatient,3585,3585,2151,2868,USP Naphcare,Commercial,2151,60,,negotiated_dollar,2151,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Aetna,Commercial,1595.32,44.5,,negotiated_dollar,1595.32,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Aetna,Medicare,1254.75,35,,negotiated_dollar,1254.75,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Ambetter,Marketplace,530.58,14.8,,negotiated_dollar,530.58,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Amerigroup,Medicaid,582.92,16.26,,negotiated_dollar,582.92,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,HMO/POS,2625.65,73.24,,negotiated_dollar,2625.65,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,HPN,2868,80,,negotiated_dollar,2868,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,PPO,2726.39,76.05,,negotiated_dollar,2726.39,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,Pathways/Marketplace,2625.65,73.24,,negotiated_dollar,2625.65,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Caresource,Commercial,534.88,14.92,,negotiated_dollar,534.88,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Cigna,Commercial,2120.53,59.15,,negotiated_dollar,2120.53,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Cigna,IFP,2100.81,58.6,,negotiated_dollar,2100.81,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Cigna,Local Plus,1559.48,43.5,,negotiated_dollar,1559.48,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Kaiser,Commercial,2717.43,75.8,,negotiated_dollar,2717.43,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Multiplan,Commercial,2760.45,77,,negotiated_dollar,2760.45,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Oscar Health,Commercial/Marketplace,2330.25,65,,negotiated_dollar,2330.25,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Peach State,Medicaid,534.88,14.92,,negotiated_dollar,534.88,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,UHC,Commercial,2581.2,72,,negotiated_dollar,2581.2,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,UHC,Exchange/Marketplace,2079.3,58,,negotiated_dollar,2079.3,percent of total billed charges
-Grady Memorial Hospital,Stress Echo,,482,48200001,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,USP Naphcare,Commercial,2151,60,,negotiated_dollar,2151,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Aetna,Commercial,1595.32,44.5,,negotiated_dollar,1595.32,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Aetna,Medicare,1254.75,35,,negotiated_dollar,1254.75,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Ambetter,Marketplace,530.58,14.8,,negotiated_dollar,530.58,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Amerigroup,Medicaid,582.92,16.26,,negotiated_dollar,582.92,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,HMO/POS,2625.65,73.24,,negotiated_dollar,2625.65,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,HPN,2868,80,,negotiated_dollar,2868,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,PPO,2726.39,76.05,,negotiated_dollar,2726.39,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,Pathways/Marketplace,2625.65,73.24,,negotiated_dollar,2625.65,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Caresource,Commercial,534.88,14.92,,negotiated_dollar,534.88,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Cigna,Commercial,2120.53,59.15,,negotiated_dollar,2120.53,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Cigna,IFP,2100.81,58.6,,negotiated_dollar,2100.81,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Cigna,Local Plus,1559.48,43.5,,negotiated_dollar,1559.48,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Kaiser,Commercial,2717.43,75.8,,negotiated_dollar,2717.43,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Multiplan,Commercial,2760.45,77,,negotiated_dollar,2760.45,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Oscar Health,Commercial/Marketplace,2330.25,65,,negotiated_dollar,2330.25,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Peach State,Medicaid,534.88,14.92,,negotiated_dollar,534.88,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,UHC,Commercial,2581.2,72,,negotiated_dollar,2581.2,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,UHC,Exchange/Marketplace,2079.3,58,,negotiated_dollar,2079.3,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,48200002,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,USP Naphcare,Commercial,2151,60,,negotiated_dollar,2151,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Aetna,Commercial,1595.32,44.5,,negotiated_dollar,1595.32,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Aetna,Medicare,1254.75,35,,negotiated_dollar,1254.75,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Ambetter,Marketplace,530.58,14.8,,negotiated_dollar,530.58,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Amerigroup,Medicaid,582.92,16.26,,negotiated_dollar,582.92,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,HMO/POS,2625.65,73.24,,negotiated_dollar,2625.65,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,HPN,2868,80,,negotiated_dollar,2868,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,PPO,2726.39,76.05,,negotiated_dollar,2726.39,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Anthem BCBS,Pathways/Marketplace,2625.65,73.24,,negotiated_dollar,2625.65,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Caresource,Commercial,534.88,14.92,,negotiated_dollar,534.88,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Cigna,Commercial,2120.53,59.15,,negotiated_dollar,2120.53,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Cigna,IFP,2100.81,58.6,,negotiated_dollar,2100.81,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Cigna,Local Plus,1559.48,43.5,,negotiated_dollar,1559.48,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Kaiser,Commercial,2717.43,75.8,,negotiated_dollar,2717.43,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Multiplan,Commercial,2760.45,77,,negotiated_dollar,2760.45,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Oscar Health,Commercial/Marketplace,2330.25,65,,negotiated_dollar,2330.25,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,Peach State,Medicaid,534.88,14.92,,negotiated_dollar,534.88,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,UHC,Commercial,2581.2,72,,negotiated_dollar,2581.2,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,UHC,Exchange/Marketplace,2079.3,58,,negotiated_dollar,2079.3,percent of total billed charges
-Grady Memorial Hospital,Cardiac Stress Test,,482,73000011,,93017,,,,facility,,outpatient,3585,3585,530.58,2868,USP Naphcare,Commercial,2151,60,,negotiated_dollar,2151,percent of total billed charges
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Aetna,Commercial,88.5,,,negotiated_dollar,88.5,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Aetna,Medicare,309.83,,,negotiated_dollar,309.83,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Ambetter,Marketplace,309.83,,,negotiated_dollar,309.83,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Anthem BCBS,Medicare,309.83,,,negotiated_dollar,309.83,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Caresource,Marketplace,495.72,,,negotiated_dollar,495.72,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Cigna,IFP,422.58,,,negotiated_dollar,422.58,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Cigna,Medicare,309.83,,,negotiated_dollar,309.83,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Clear Spring Health,Medicare,325.32,,,negotiated_dollar,325.32,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Clover,Medicare,325.32,,,negotiated_dollar,325.32,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Humana,Medicare,309.83,,,negotiated_dollar,309.83,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Kaiser,Medicare,309.83,,,negotiated_dollar,309.83,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Medicare,Medicare,309.83,,,negotiated_dollar,309.83,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,Oscar Health,Commercial/Marketplace,513.8,,,negotiated_dollar,513.8,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,UHC,Medicare,309.83,,,negotiated_dollar,309.83,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,USP Naphcare,Commercial,573.18,,,negotiated_dollar,573.18,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,VACCN,Commercial,309.83,,,negotiated_dollar,309.83,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,facility,,outpatient,,,88.5,573.18,WellCare,Medicare,309.83,,,negotiated_dollar,309.83,case rate
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Aetna,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Ambetter,Marketplace,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Amerigroup,Medicaid,57.78,,,negotiated_dollar,57.78,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Anthem BCBS,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Caresource,Commercial,57.78,,,negotiated_dollar,57.78,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Caresource,Marketplace,59.47,,,negotiated_dollar,59.47,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Cigna,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Clear Spring Health,Medicare,39.03,,,negotiated_dollar,39.03,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Clover,Medicare,39.03,,,negotiated_dollar,39.03,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Humana,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Kaiser,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Medicare,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Oscar Health,Commercial/Marketplace,51.77,,,negotiated_dollar,51.77,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Peach State,Medicaid,57.78,,,negotiated_dollar,57.78,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,UHC,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,USP Naphcare,Commercial,40.89,,,negotiated_dollar,40.89,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,VACCN,Commercial,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,WellCare,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Aetna,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Ambetter,Marketplace,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Amerigroup,Medicaid,57.78,,,negotiated_dollar,57.78,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Anthem BCBS,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Caresource,Commercial,57.78,,,negotiated_dollar,57.78,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Caresource,Marketplace,59.47,,,negotiated_dollar,59.47,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Cigna,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Clear Spring Health,Medicare,39.03,,,negotiated_dollar,39.03,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Clover,Medicare,39.03,,,negotiated_dollar,39.03,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Humana,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Kaiser,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Medicare,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Oscar Health,Commercial/Marketplace,51.77,,,negotiated_dollar,51.77,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,Peach State,Medicaid,57.78,,,negotiated_dollar,57.78,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,UHC,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,USP Naphcare,Commercial,40.89,,,negotiated_dollar,40.89,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,VACCN,Commercial,37.17,,,negotiated_dollar,37.17,fee schedule
-Grady Memorial Hospital,Cardiovascular stress test,,,,,93017,,,,professional,,outpatient,,,37.17,59.47,WellCare,Medicare,37.17,,,negotiated_dollar,37.17,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Aetna,Commercial,2891,,,negotiated_dollar,2891,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Aetna,Medicare,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Ambetter,Marketplace,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Anthem BCBS,HMO/POS,5537.81,,,negotiated_dollar,5537.81,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Anthem BCBS,Medicare,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Anthem BCBS,PPO,5612.5,,,negotiated_dollar,5612.5,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Anthem BCBS,Pathways/Marketplace,5537.81,,,negotiated_dollar,5537.81,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Caresource,Marketplace,1877.02,,,negotiated_dollar,1877.02,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Cigna,Commercial,2836,,,negotiated_dollar,2836,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Cigna,IFP,1588.71,,,negotiated_dollar,1588.71,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Cigna,Local Plus,1362,,,negotiated_dollar,1362,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Cigna,Medicare,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Clear Spring Health,Medicare,1231.8,,,negotiated_dollar,1231.8,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Clover,Medicare,1231.8,,,negotiated_dollar,1231.8,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Humana,Medicare,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Kaiser,Medicare,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Medicare,Medicare,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Oscar Health,Commercial/Marketplace,1945.49,,,negotiated_dollar,1945.49,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,Peach State,Medicaid,231.71,,,negotiated_dollar,231.71,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,UHC,Charter,2880,,,negotiated_dollar,2880,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,UHC,Commercial,2880,,,negotiated_dollar,2880,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,UHC,Core,2592,,,negotiated_dollar,2592,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,UHC,Exchange/Marketplace,2304,,,negotiated_dollar,2304,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,UHC,Medicare,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,UHC,Surest Health,2880,,,negotiated_dollar,2880,case rate
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,USP Naphcare,Commercial,2170.31,,,negotiated_dollar,2170.31,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,VACCN,Commercial,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,facility,,outpatient,,,231.71,5612.5,WellCare,Medicare,1173.14,,,negotiated_dollar,1173.14,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Aetna,Medicare,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Ambetter,Marketplace,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Amerigroup,Medicaid,315.67,,,negotiated_dollar,315.67,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Anthem BCBS,Medicare,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Caresource,Commercial,315.67,,,negotiated_dollar,315.67,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Caresource,Marketplace,311.26,,,negotiated_dollar,311.26,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Cigna,Medicare,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Clear Spring Health,Medicare,204.27,,,negotiated_dollar,204.27,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Clover,Medicare,204.27,,,negotiated_dollar,204.27,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Humana,Medicare,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Kaiser,Medicare,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Medicare,Medicare,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Oscar Health,Commercial/Marketplace,273.7,,,negotiated_dollar,273.7,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,Peach State,Medicaid,315.67,,,negotiated_dollar,315.67,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,UHC,Medicare,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,USP Naphcare,Commercial,213.99,,,negotiated_dollar,213.99,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,VACCN,Commercial,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,194.54,315.67,WellCare,Medicare,194.54,,,negotiated_dollar,194.54,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Aetna,Medicare,415.78,,,negotiated_dollar,415.78,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Ambetter,Marketplace,415.78,,,negotiated_dollar,415.78,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Amerigroup,Medicaid,315.67,,,negotiated_dollar,315.67,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Anthem BCBS,Medicare,415.78,,,negotiated_dollar,415.78,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Caresource,Commercial,315.67,,,negotiated_dollar,315.67,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Caresource,Marketplace,665.25,,,negotiated_dollar,665.25,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Cigna,Medicare,415.78,,,negotiated_dollar,415.78,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Clear Spring Health,Medicare,436.57,,,negotiated_dollar,436.57,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Clover,Medicare,436.57,,,negotiated_dollar,436.57,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Humana,Medicare,415.78,,,negotiated_dollar,415.78,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Kaiser,Medicare,415.78,,,negotiated_dollar,415.78,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Medicare,Medicare,415.78,,,negotiated_dollar,415.78,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Oscar Health,Commercial/Marketplace,596.83,,,negotiated_dollar,596.83,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,Peach State,Medicaid,315.67,,,negotiated_dollar,315.67,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,UHC,Medicare,415.78,,,negotiated_dollar,415.78,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,USP Naphcare,Commercial,457.36,,,negotiated_dollar,457.36,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,VACCN,Commercial,415.78,,,negotiated_dollar,415.78,fee schedule
+Grady Memorial Hospital,Colonoscopy and biopsy,,,,,45380,,,,professional,,outpatient,,,315.67,665.25,WellCare,Medicare,415.78,,,negotiated_dollar,415.78,fee schedule
