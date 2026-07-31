@@ -7,6 +7,13 @@ provide measurably better quality of care.
 Built using hospitals' federally-mandated machine-readable price
 transparency files, combined with CMS hospital quality ratings.
 
+![Dashboard screenshot](dashboard/dashboard_screenshot.png)
+
+**Bottom line:** Among the three hospitals with sufficiently comparable
+price and quality data, higher-rated hospitals also had higher median
+prices in only one of four procedures. The sample is too small to
+establish a broader relationship.
+
 **[View the interactive dashboard →](https://public.tableau.com/views/GeorgiaHospitalPriceQualityExplorer/Dashboard1)**
 
 ## The Question
@@ -42,7 +49,7 @@ answer the question in the first place, before answering it.
 - **Median negotiated price for the same procedure varied by up to
   5x across hospitals.** Head CT ranged from $627.65 (Grady) to
   $1,721.85 (CHOA).
-- **A hospital's overall CMS star rating did not reliably predict its
+- **A hospital's overall CMS star rating did not reliably correspond its
   prices.** Among the three hospitals with both reliable price data
   and a standard quality rating, higher star rating predicted higher
   price in only 1 of 4 procedures.

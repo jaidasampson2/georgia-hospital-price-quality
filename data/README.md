@@ -214,9 +214,7 @@ uniformly lower quality of care.
 
 ### Conclusion
 
-This dataset does not support treating a hospital's overall star rating
-as a reliable proxy for either price or quality on a per-component
-basis. Prices did not consistently track star ratings across
+The results show that an overall star rating should not be interpreted as uniform performance across every quality dimension. Grady's stronger safety measure performance despite its lower composite score is a clear example. Prices did not consistently track star ratings across
 procedures (1 of 4 matched), and a hospital's composite rating can mask
 meaningfully different performance across its individual quality
 dimensions — a lower-rated hospital (Grady) scored better than
@@ -239,13 +237,8 @@ one exists at a larger scale.
 
 ## Next Steps
 
-- Build the Tableau/Power BI dashboard incorporating the median-vs-
-  average, sample-size, and price-quality caveats documented above.
-- Consider pulling procedure-specific CMS measures (e.g. imaging
-  efficiency measures, where still tracked) if a more targeted quality
-  comparison is wanted, with the understanding that CMS's standard
-  measure set is largely inpatient-focused and doesn't map cleanly onto
-  this project's four (mostly outpatient) target procedures.
-- Emory/Wellstar's commercial-payer data gap (Finding 5) is a genuine,
-  documented limitation of their published files, not something to
-  "fix" further within this project's data source.
+- Add automated tests for parser outputs and schema conformity
+  (`tests/` currently exists but is empty).
+- Expand the study to additional hospitals and procedures.
+- Compare procedure-specific quality measures against these results
+  where a suitable CMS measure exists.
