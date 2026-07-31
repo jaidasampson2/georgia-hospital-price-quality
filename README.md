@@ -7,6 +7,8 @@ provide measurably better quality of care.
 Built using hospitals' federally-mandated machine-readable price
 transparency files, combined with CMS hospital quality ratings.
 
+**[View the interactive dashboard →](https://public.tableau.com/views/GeorgiaHospitalPriceQualityExplorer/Dashboard1)**
+
 ## The Question
 
 Since 2021, U.S. hospitals have been required to publish their

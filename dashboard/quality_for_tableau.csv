@@ -1,0 +1,7 @@
+hospital_name,overall_rating,safety_measures_better,safety_measures_total,readm_measures_better,readm_measures_total,reliability_flag
+"Emory University Hospital",4.0,1.0,8.0,1.0,11.0,low_confidence
+"Piedmont Atlanta Hospital",4.0,4.0,8.0,0.0,11.0,reliable
+"Wellstar Kennestone Hospital",4.0,4.0,8.0,1.0,11.0,low_confidence
+"Northside Hospital Atlanta",3.0,1.0,8.0,0.0,10.0,reliable
+"Grady Memorial Hospital",2.0,3.0,7.0,0.0,8.0,reliable
+"Arthur M. Blank Hospital",,,,,,no_rating_pediatric
